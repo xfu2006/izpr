@@ -1,0 +1,1 @@
+RUST_BACKTRACE=1 mpirun -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 4 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc gen_nonzk_sigma_proof ../DATA/anti_virus_output/clamav_5/ ../DATA/anti_virus_output/sigma_001

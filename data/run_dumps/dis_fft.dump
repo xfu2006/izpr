@@ -1,0 +1,212 @@
+REPORT_op: fft, size: 65536, time: 19 ms, np: 4
+
+REPORT_op: fft, size: 131072, time: 34 ms, np: 4
+
+REPORT_op: fft, size: 262144, time: 68 ms, np: 4
+
+REPORT_op: fft, size: 524288, time: 134 ms, np: 4
+
+REPORT_op: fft, size: 1048576, time: 257 ms, np: 4
+
+REPORT_op: fft, size: 2097152, time: 506 ms, np: 4
+
+REPORT_op: fft, size: 4194304, time: 1077 ms, np: 4
+
+REPORT_op: fft, size: 8388608, time: 2161 ms, np: 4
+
+REPORT_op: fft, size: 16777216, time: 4681 ms, np: 4
+
+REPORT_op: fft, size: 33554432, time: 9555 ms, np: 4
+
+REPORT_op: fft, size: 67108864, time: 19287 ms, np: 4
+
+REPORT_op: fft, size: 134217728, time: 40623 ms, np: 4
+
+REPORT_op: fft, size: 268435456, time: 79862 ms, np: 4
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 4 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 536870912 
+REPORT_op: fft, size: 65536, time: 10 ms, np: 8
+
+REPORT_op: fft, size: 131072, time: 19 ms, np: 8
+
+REPORT_op: fft, size: 262144, time: 35 ms, np: 8
+
+REPORT_op: fft, size: 524288, time: 68 ms, np: 8
+
+REPORT_op: fft, size: 1048576, time: 135 ms, np: 8
+
+REPORT_op: fft, size: 2097152, time: 260 ms, np: 8
+
+REPORT_op: fft, size: 4194304, time: 484 ms, np: 8
+
+REPORT_op: fft, size: 8388608, time: 1022 ms, np: 8
+
+REPORT_op: fft, size: 16777216, time: 2007 ms, np: 8
+
+REPORT_op: fft, size: 33554432, time: 4097 ms, np: 8
+
+REPORT_op: fft, size: 67108864, time: 8662 ms, np: 8
+
+REPORT_op: fft, size: 134217728, time: 17943 ms, np: 8
+
+REPORT_op: fft, size: 268435456, time: 36247 ms, np: 8
+
+REPORT_op: fft, size: 536870912, time: 75276 ms, np: 8
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 8 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 1073741824 
+REPORT_op: fft, size: 65536, time: 8 ms, np: 16
+
+REPORT_op: fft, size: 131072, time: 12 ms, np: 16
+
+REPORT_op: fft, size: 262144, time: 21 ms, np: 16
+
+REPORT_op: fft, size: 524288, time: 44 ms, np: 16
+
+REPORT_op: fft, size: 1048576, time: 77 ms, np: 16
+
+REPORT_op: fft, size: 2097152, time: 147 ms, np: 16
+
+REPORT_op: fft, size: 4194304, time: 271 ms, np: 16
+
+REPORT_op: fft, size: 8388608, time: 568 ms, np: 16
+
+REPORT_op: fft, size: 16777216, time: 1059 ms, np: 16
+
+REPORT_op: fft, size: 33554432, time: 2107 ms, np: 16
+
+REPORT_op: fft, size: 67108864, time: 4318 ms, np: 16
+
+REPORT_op: fft, size: 134217728, time: 8653 ms, np: 16
+
+REPORT_op: fft, size: 268435456, time: 19680 ms, np: 16
+
+REPORT_op: fft, size: 536870912, time: 37593 ms, np: 16
+
+REPORT_op: fft, size: 1073741824, time: 77205 ms, np: 16
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 16 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 2147483648 
+REPORT_op: fft, size: 65536, time: 8 ms, np: 32
+
+REPORT_op: fft, size: 131072, time: 14 ms, np: 32
+
+REPORT_op: fft, size: 262144, time: 15 ms, np: 32
+
+REPORT_op: fft, size: 524288, time: 27 ms, np: 32
+
+REPORT_op: fft, size: 1048576, time: 52 ms, np: 32
+
+REPORT_op: fft, size: 2097152, time: 113 ms, np: 32
+
+REPORT_op: fft, size: 4194304, time: 190 ms, np: 32
+
+REPORT_op: fft, size: 8388608, time: 317 ms, np: 32
+
+REPORT_op: fft, size: 16777216, time: 585 ms, np: 32
+
+REPORT_op: fft, size: 33554432, time: 1199 ms, np: 32
+
+REPORT_op: fft, size: 67108864, time: 2308 ms, np: 32
+
+REPORT_op: fft, size: 134217728, time: 4634 ms, np: 32
+
+REPORT_op: fft, size: 268435456, time: 9612 ms, np: 32
+
+REPORT_op: fft, size: 536870912, time: 19382 ms, np: 32
+
+
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 32 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 4294967296 
+REPORT_op: fft, size: 65536, time: 22 ms, np: 64
+
+REPORT_op: fft, size: 131072, time: 20 ms, np: 64
+
+REPORT_op: fft, size: 262144, time: 30 ms, np: 64
+
+REPORT_op: fft, size: 524288, time: 31 ms, np: 64
+
+REPORT_op: fft, size: 1048576, time: 48 ms, np: 64
+
+REPORT_op: fft, size: 2097152, time: 68 ms, np: 64
+
+REPORT_op: fft, size: 4194304, time: 120 ms, np: 64
+
+REPORT_op: fft, size: 8388608, time: 257 ms, np: 64
+
+REPORT_op: fft, size: 16777216, time: 399 ms, np: 64
+
+REPORT_op: fft, size: 33554432, time: 725 ms, np: 64
+
+REPORT_op: fft, size: 67108864, time: 1431 ms, np: 64
+
+REPORT_op: fft, size: 134217728, time: 2750 ms, np: 64
+
+REPORT_op: fft, size: 268435456, time: 5592 ms, np: 64
+
+
+
+REPORT_op: fft, size: 2147483648, time: 48121 ms, np: 64
+
+
+REPORT_op: fft, size: 65536, time: 663 ms, np: 128
+
+REPORT_op: fft, size: 131072, time: 1046 ms, np: 128
+
+REPORT_op: fft, size: 262144, time: 1048 ms, np: 128
+
+REPORT_op: fft, size: 524288, time: 1034 ms, np: 128
+
+REPORT_op: fft, size: 1048576, time: 1065 ms, np: 128
+
+REPORT_op: fft, size: 2097152, time: 592 ms, np: 128
+
+REPORT_op: fft, size: 4194304, time: 714 ms, np: 128
+
+REPORT_op: fft, size: 8388608, time: 1395 ms, np: 128
+
+REPORT_op: fft, size: 16777216, time: 1981 ms, np: 128
+
+REPORT_op: fft, size: 33554432, time: 1284 ms, np: 128
+
+REPORT_op: fft, size: 67108864, time: 1510 ms, np: 128
+
+REPORT_op: fft, size: 134217728, time: 2588 ms, np: 128
+
+REPORT_op: fft, size: 268435456, time: 4443 ms, np: 128
+
+REPORT_op: fft, size: 536870912, time: 7992 ms, np: 128
+
+REPORT_op: fft, size: 1073741824, time: 15704 ms, np: 128
+
+REPORT_op: fft, size: 2147483648, time: 31970 ms, np: 128
+
+REPORT_op: fft, size: 4294967296, time: 66196 ms, np: 128
+
+REPORT_op: fft, size: 65536, time: 1574 ms, np: 256
+
+REPORT_op: fft, size: 131072, time: 1543 ms, np: 256
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 256 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 262144 
+REPORT_op: fft, size: 524288, time: 1599 ms, np: 256
+
+REPORT_op: fft, size: 1048576, time: 1496 ms, np: 256
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 256 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 2097152 
+REPORT_op: fft, size: 4194304, time: 2079 ms, np: 256
+
+REPORT_op: fft, size: 8388608, time: 1718 ms, np: 256
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 256 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 16777216 
+REPORT_op: fft, size: 33554432, time: 4220 ms, np: 256
+
+REPORT_op: fft, size: 67108864, time: 4031 ms, np: 256
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 256 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 134217728 
+REPORT_op: fft, size: 268435456, time: 7701 ms, np: 256
+
+REPORT_op: fft, size: 536870912, time: 11454 ms, np: 256
+
+Task Timed Out: mpirun --quiet -mca btl_tcp_if_exclude br-7406b8232d20,docker0,lo,wlp61s0 -v --hostfile /tmp/tmp_nodelist.txt -np 256 /home/xiang/Desktop/ProofCarryExec/Code/zkregex/main/../acc/target/release/acc profile_fft 1073741824 
+REPORT_op: fft, size: 2147483648, time: 42003 ms, np: 256
+
+REPORT_op: fft, size: 4294967296, time: 74631 ms, np: 256
+

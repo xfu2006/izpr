@@ -1,0 +1,44 @@
+[package]
+name = "acc"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+incremental = true
+panic = 'abort'
+
+[profile.test] 
+opt-level = 3
+
+[dependencies]
+#flate2={Version="2-1.0.24"}
+#tar={Version="0.4.38"}
+blake2 = "0.9"
+ark-ff= {version="0.3.0", features=["asm"], path="dependency/algebra/ff"}
+ark-std= {version="0.3.0"}
+ark-bls12-381= {version="0.3.0", path="dependency/curves/bls12_381"}
+ark-bn254= {version="0.3.0", path="dependency/curves/bn254"}
+ark-ec= {version="0.3.0", path="dependency/algebra/ec"}
+ark-poly= {version="0.3.0", path="dependency/algebra/poly"}
+#ark-sipp= {version="0.3.0", path="dependency/ripp/sipp", default-features=false}
+#ark-inner-products= {version="0.3.0", path="dependency/ripp/inner_products", default-features=false}
+#ark-dh-commitments= {version="0.3.0", path="dependency/ripp/dh_commitments", default-features=false}
+#ark-ip-proofs= {version="0.3.0", path="dependency/ripp/ip_proofs", default-features=false}
+ark-poly-commit= {version="0.3.0"}
+ark-serialize= {version="0.3.0", path="dependency/algebra/serialize"}
+#mpi= { version = "0.6.0", path = "../dependency/rsmpi"}
+#mpi= { version = "0.7.0", features = ["user-operations", "derive"] }
+sha2={version="0.10.2"}
+#num-bigint={version="0.1.43"}
+num-bigint={version="0.4.3"}
+once_cell = {version = "1.10.0"}
+sysinfo={version="0.26.8"}
+
+[patch.crates-io]
+ark-std = {git = "https://github.com/arkworks-rs/std",rev="05b7a19a99551bdd737eb2ffb1c9eac7be0dd11f"}
+
+

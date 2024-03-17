@@ -1,0 +1,3515 @@
+profiling ... with threads: 32, lookup_size: 1024, query_size: 256
+LOG: gen_kzg_key: 1024 68 ms
+LOG: preprocess: 1024 1247 ms
+REPORT_op: cq, size: 256, time: 47 ms, np: 32
+LOG: prove_cq: 1024 47 ms
+LOG: slow_verify_cq 1024 15 ms
+LOG: fast_verify_cq1024 12 ms
+LOG: gen_rand_eles: 256 475 us
+LOG: --** row1 and row 2 9 ms
+LOG: --** row3 13 ms
+LOG: --** set up qanizk 328 ms
+LOG: --** setup_kzg 6772 ms
+LOG: --** cq_aux qanizk 352218 ms
+LOG: setup_rng (FULL): 160: 360361 ms
+LOG: setup range proof keys: 256 360375 ms
+LOG: produce two commits: 256 7 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 145 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 4 ms
+REPORT_op: range, size: 256, time: 154 ms, np: 32
+LOG: prove: 256 154 ms
+LOG: verify: 256 15 ms
+Profile PN Lookup: look size: 1024, query size: 256
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 691922 ms
+LOG: -- setup pnlookup 694275 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 3 ms
+LOG: ---------- commit_b 1 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 1 ms
+LOG: ---------- compute b_gamma, t_gamma... 871 us
+LOG: ---------- compute h(X) 8 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 937 us
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 41 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 150 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 2 ms
+LOG: ------ range proof  158 ms
+LOG: ------ compute q_o 6 ms
+LOG: ------ weighted kzg proof 37 ms
+REPORT_op: pn_lookup, size: 256, time: 248 ms, np: 32
+LOG: -- prove pnlookup 248 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 1024, query_size: 256
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 692441 ms
+LOG: -- set up keys 694805 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 3 ms
+-------- fold prove --------
+LOG: -------- commit_m 2 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 3 ms
+LOG: ---------- commit_b 1 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 2 ms
+LOG: ---------- compute b_gamma, t_gamma... 704 us
+LOG: ---------- compute h(X) 8 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 991 us
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 40 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 158 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 4 ms
+LOG: ------ range proof  167 ms
+LOG: ------ compute q_o 6 ms
+LOG: ------ weighted kzg proof 39 ms
+LOG: ---- pn_lookup proof 257 ms
+LOG: ---- compute com_v 254 us
+LOG: ---- compute com_u 2 ms
+LOG: ---- compute q 14 ms
+LOG: ---- commit q 1 ms
+LOG: ---- commit u 2 ms
+LOG: ---- batch kzg 16 ms
+LOG: ---- dlog  2 ms
+REPORT_op: asset1, size: 256, time: 297 ms, np: 32
+LOG: -- prove work 297 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 2048, query_size: 512
+LOG: gen_kzg_key: 2048 53 ms
+LOG: preprocess: 2048 1483 ms
+REPORT_op: cq, size: 512, time: 44 ms, np: 32
+LOG: prove_cq: 2048 44 ms
+LOG: slow_verify_cq 2048 15 ms
+LOG: fast_verify_cq2048 12 ms
+LOG: gen_rand_eles: 512 554 us
+LOG: --** row1 and row 2 11 ms
+LOG: --** row3 17 ms
+LOG: --** set up qanizk 575 ms
+LOG: --** setup_kzg 6665 ms
+LOG: --** cq_aux qanizk 351899 ms
+LOG: setup_rng (FULL): 160: 360188 ms
+LOG: setup range proof keys: 512 360201 ms
+LOG: produce two commits: 512 7 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 196 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+REPORT_op: range, size: 512, time: 209 ms, np: 32
+LOG: prove: 512 209 ms
+LOG: verify: 512 15 ms
+Profile PN Lookup: look size: 2048, query size: 512
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 694570 ms
+LOG: -- setup pnlookup 697631 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 5 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 4 ms
+LOG: ---------- commit_b 1 ms
+LOG: ---------- compute q_b 13 ms
+LOG: ---------- commit_q_b and commit_p 2 ms
+LOG: ---------- compute b_gamma, t_gamma... 530 us
+LOG: ---------- compute h(X) 10 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 48 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 205 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 5 ms
+LOG: ------ range proof  217 ms
+LOG: ------ compute q_o 7 ms
+LOG: ------ weighted kzg proof 46 ms
+REPORT_op: pn_lookup, size: 512, time: 324 ms, np: 32
+LOG: -- prove pnlookup 324 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 2048, query_size: 512
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 694495 ms
+LOG: -- set up keys 697553 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 4 ms
+LOG: ---------- commit_b 1 ms
+LOG: ---------- compute q_b 12 ms
+LOG: ---------- commit_q_b and commit_p 2 ms
+LOG: ---------- compute b_gamma, t_gamma... 422 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 46 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 217 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+LOG: ------ range proof  231 ms
+LOG: ------ compute q_o 7 ms
+LOG: ------ weighted kzg proof 44 ms
+LOG: ---- pn_lookup proof 334 ms
+LOG: ---- compute com_v 247 us
+LOG: ---- compute com_u 2 ms
+LOG: ---- compute q 23 ms
+LOG: ---- commit q 1 ms
+LOG: ---- commit u 2 ms
+LOG: ---- batch kzg 19 ms
+LOG: ---- dlog  2 ms
+REPORT_op: asset1, size: 512, time: 387 ms, np: 32
+LOG: -- prove work 387 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 4096, query_size: 1024
+LOG: gen_kzg_key: 4096 85 ms
+LOG: preprocess: 4096 1806 ms
+REPORT_op: cq, size: 1024, time: 56 ms, np: 32
+LOG: prove_cq: 4096 56 ms
+LOG: slow_verify_cq 4096 15 ms
+LOG: fast_verify_cq4096 12 ms
+LOG: gen_rand_eles: 1024 624 us
+LOG: --** row1 and row 2 19 ms
+LOG: --** row3 25 ms
+LOG: --** set up qanizk 1221 ms
+LOG: --** setup_kzg 6584 ms
+LOG: --** cq_aux qanizk 351803 ms
+LOG: setup_rng (FULL): 160: 360681 ms
+LOG: setup range proof keys: 1024 360693 ms
+LOG: produce two commits: 1024 15 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 295 ms
+LOG: -- range proof step 3: build wit 4 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+REPORT_op: range, size: 1024, time: 317 ms, np: 32
+LOG: prove: 1024 317 ms
+LOG: verify: 1024 15 ms
+Profile PN Lookup: look size: 4096, query size: 1024
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 2 ms
+LOG: setup_rng: (QUICK) 160: 696800 ms
+LOG: -- setup pnlookup 700541 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 6 ms
+-------- fold prove --------
+LOG: -------- commit_m 4 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 6 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 16 ms
+LOG: ---------- commit_q_b and commit_p 4 ms
+LOG: ---------- compute b_gamma, t_gamma... 776 us
+LOG: ---------- compute h(X) 12 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 8 ms
+LOG: ------ fold prove cq 61 ms
+LOG: -- range proof step 1: build query table 4 ms
+LOG: -- range proof step 2: prove cq 306 ms
+LOG: -- range proof step 3: build wit 4 ms
+LOG: -- range proof step 4: prove_qa_nizk 9 ms
+LOG: ------ range proof  325 ms
+LOG: ------ compute q_o 9 ms
+LOG: ------ weighted kzg proof 58 ms
+REPORT_op: pn_lookup, size: 1024, time: 461 ms, np: 32
+LOG: -- prove pnlookup 461 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 4096, query_size: 1024
+LOG: -- generate random data 2 ms
+LOG: setup_rng: (QUICK) 160: 696892 ms
+LOG: -- set up keys 700628 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 5 ms
+-------- fold prove --------
+LOG: -------- commit_m 4 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 5 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 17 ms
+LOG: ---------- commit_q_b and commit_p 4 ms
+LOG: ---------- compute b_gamma, t_gamma... 489 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 8 ms
+LOG: ------ fold prove cq 60 ms
+LOG: -- range proof step 1: build query table 4 ms
+LOG: -- range proof step 2: prove cq 337 ms
+LOG: -- range proof step 3: build wit 4 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+LOG: ------ range proof  361 ms
+LOG: ------ compute q_o 8 ms
+LOG: ------ weighted kzg proof 60 ms
+LOG: ---- pn_lookup proof 496 ms
+LOG: ---- compute com_v 253 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 58 ms
+LOG: ---- commit q 1 ms
+LOG: ---- commit u 4 ms
+LOG: ---- batch kzg 22 ms
+LOG: ---- dlog  2 ms
+REPORT_op: asset1, size: 1024, time: 590 ms, np: 32
+LOG: -- prove work 590 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 8192, query_size: 2048
+LOG: gen_kzg_key: 8192 116 ms
+LOG: preprocess: 8192 2574 ms
+REPORT_op: cq, size: 2048, time: 77 ms, np: 32
+LOG: prove_cq: 8192 77 ms
+LOG: slow_verify_cq 8192 15 ms
+LOG: fast_verify_cq8192 12 ms
+LOG: gen_rand_eles: 2048 675 us
+LOG: setup_rng: (QUICK) 160: 702307 ms
+LOG: setup range proof keys: 2048 702323 ms
+LOG: produce two commits: 2048 23 ms
+LOG: -- range proof step 1: build query table 4 ms
+LOG: -- range proof step 2: prove cq 496 ms
+LOG: -- range proof step 3: build wit 7 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+REPORT_op: range, size: 2048, time: 537 ms, np: 32
+LOG: prove: 2048 537 ms
+LOG: verify: 2048 15 ms
+Profile PN Lookup: look size: 8192, query size: 2048
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 4 ms
+LOG: setup_rng: (QUICK) 160: 702553 ms
+LOG: -- setup pnlookup 707890 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 10 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 11 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 25 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 544 us
+LOG: ---------- compute h(X) 17 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 10 ms
+LOG: ------ fold prove cq 88 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 516 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 18 ms
+LOG: ------ range proof  550 ms
+LOG: ------ compute q_o 11 ms
+LOG: ------ weighted kzg proof 71 ms
+REPORT_op: pn_lookup, size: 2048, time: 732 ms, np: 32
+LOG: -- prove pnlookup 732 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 8192, query_size: 2048
+LOG: -- generate random data 4 ms
+LOG: setup_rng: (QUICK) 160: 702433 ms
+LOG: -- set up keys 707780 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 8 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 9 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 24 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 17 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 10 ms
+LOG: ------ fold prove cq 86 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 579 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  622 ms
+LOG: ------ compute q_o 11 ms
+LOG: ------ weighted kzg proof 79 ms
+LOG: ---- pn_lookup proof 809 ms
+LOG: ---- compute com_v 271 us
+LOG: ---- compute com_u 4 ms
+LOG: ---- compute q 74 ms
+LOG: ---- commit q 3 ms
+LOG: ---- commit u 6 ms
+LOG: ---- batch kzg 33 ms
+LOG: ---- dlog  3 ms
+REPORT_op: asset1, size: 2048, time: 935 ms, np: 32
+LOG: -- prove work 935 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 16384, query_size: 4096
+LOG: gen_kzg_key: 16384 185 ms
+LOG: preprocess: 16384 4379 ms
+REPORT_op: cq, size: 4096, time: 116 ms, np: 32
+LOG: prove_cq: 16384 116 ms
+LOG: slow_verify_cq 16384 15 ms
+LOG: fast_verify_cq16384 12 ms
+LOG: gen_rand_eles: 4096 868 us
+LOG: --** row1 and row 2 69 ms
+LOG: --** row3 74 ms
+LOG: --** set up qanizk 5002 ms
+LOG: --** setup_kzg 6630 ms
+LOG: --** cq_aux qanizk 351959 ms
+LOG: setup_rng (FULL): 160: 364788 ms
+LOG: setup range proof keys: 4096 364800 ms
+LOG: produce two commits: 4096 37 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 866 ms
+LOG: -- range proof step 3: build wit 12 ms
+LOG: -- range proof step 4: prove_qa_nizk 47 ms
+REPORT_op: range, size: 4096, time: 934 ms, np: 32
+LOG: prove: 4096 934 ms
+LOG: verify: 4096 15 ms
+Profile PN Lookup: look size: 16384, query size: 4096
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 9 ms
+LOG: setup_rng: (QUICK) 160: 713503 ms
+LOG: -- setup pnlookup 722586 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 16 ms
+-------- fold prove --------
+LOG: -------- commit_m 9 ms
+LOG: -------- commit_a 5 ms
+LOG: -------- commit_qa 20 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 37 ms
+LOG: ---------- commit_q_b and commit_p 10 ms
+LOG: ---------- compute b_gamma, t_gamma... 940 us
+LOG: ---------- compute h(X) 20 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 4 ms
+LOG: ---------- compute zk_qa0 DLOG 15 ms
+LOG: ------ fold prove cq 130 ms
+LOG: -- range proof step 1: build query table 13 ms
+LOG: -- range proof step 2: prove cq 896 ms
+LOG: -- range proof step 3: build wit 12 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  951 ms
+LOG: ------ compute q_o 14 ms
+LOG: ------ weighted kzg proof 93 ms
+REPORT_op: pn_lookup, size: 4096, time: 1207 ms, np: 32
+LOG: -- prove pnlookup 1207 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 16384, query_size: 4096
+LOG: -- generate random data 9 ms
+LOG: setup_rng: (QUICK) 160: 713411 ms
+LOG: -- set up keys 722486 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 14 ms
+-------- fold prove --------
+LOG: -------- commit_m 9 ms
+LOG: -------- commit_a 5 ms
+LOG: -------- commit_qa 17 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 38 ms
+LOG: ---------- commit_q_b and commit_p 9 ms
+LOG: ---------- compute b_gamma, t_gamma... 619 us
+LOG: ---------- compute h(X) 21 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 4 ms
+LOG: ---------- compute zk_qa0 DLOG 14 ms
+LOG: ------ fold prove cq 126 ms
+LOG: -- range proof step 1: build query table 12 ms
+LOG: -- range proof step 2: prove cq 1020 ms
+LOG: -- range proof step 3: build wit 13 ms
+LOG: -- range proof step 4: prove_qa_nizk 47 ms
+LOG: ------ range proof  1095 ms
+LOG: ------ compute q_o 14 ms
+LOG: ------ weighted kzg proof 104 ms
+LOG: ---- pn_lookup proof 1354 ms
+LOG: ---- compute com_v 326 us
+LOG: ---- compute com_u 7 ms
+LOG: ---- compute q 88 ms
+LOG: ---- commit q 4 ms
+LOG: ---- commit u 9 ms
+LOG: ---- batch kzg 39 ms
+LOG: ---- dlog  6 ms
+REPORT_op: asset1, size: 4096, time: 1509 ms, np: 32
+LOG: -- prove work 1509 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 32768, query_size: 8192
+LOG: gen_kzg_key: 32768 317 ms
+LOG: preprocess: 32768 8486 ms
+REPORT_op: cq, size: 8192, time: 173 ms, np: 32
+LOG: prove_cq: 32768 173 ms
+LOG: slow_verify_cq 32768 15 ms
+LOG: fast_verify_cq32768 12 ms
+LOG: gen_rand_eles: 8192 1 ms
+LOG: --** row1 and row 2 123 ms
+LOG: --** row3 140 ms
+LOG: --** set up qanizk 9701 ms
+LOG: --** setup_kzg 6674 ms
+LOG: --** cq_aux qanizk 351907 ms
+LOG: setup_rng (FULL): 160: 369637 ms
+LOG: setup range proof keys: 8192 369650 ms
+LOG: produce two commits: 8192 73 ms
+LOG: -- range proof step 1: build query table 13 ms
+LOG: -- range proof step 2: prove cq 1586 ms
+LOG: -- range proof step 3: build wit 17 ms
+LOG: -- range proof step 4: prove_qa_nizk 94 ms
+REPORT_op: range, size: 8192, time: 1712 ms, np: 32
+LOG: prove: 8192 1712 ms
+LOG: verify: 8192 15 ms
+Profile PN Lookup: look size: 32768, query size: 8192
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 18 ms
+LOG: setup_rng: (QUICK) 160: 735152 ms
+LOG: -- setup pnlookup 752677 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 25 ms
+-------- fold prove --------
+LOG: -------- commit_m 16 ms
+LOG: -------- commit_a 8 ms
+LOG: -------- commit_qa 37 ms
+LOG: ---------- commit_b 8 ms
+LOG: ---------- compute q_b 62 ms
+LOG: ---------- commit_q_b and commit_p 17 ms
+LOG: ---------- compute b_gamma, t_gamma... 847 us
+LOG: ---------- compute h(X) 26 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 6 ms
+LOG: ---------- compute zk_qa0 DLOG 20 ms
+LOG: ------ fold prove cq 207 ms
+LOG: -- range proof step 1: build query table 22 ms
+LOG: -- range proof step 2: prove cq 1631 ms
+LOG: -- range proof step 3: build wit 17 ms
+LOG: -- range proof step 4: prove_qa_nizk 56 ms
+LOG: ------ range proof  1728 ms
+LOG: ------ compute q_o 19 ms
+LOG: ------ weighted kzg proof 127 ms
+REPORT_op: pn_lookup, size: 8192, time: 2109 ms, np: 32
+LOG: -- prove pnlookup 2109 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 32768, query_size: 8192
+LOG: -- generate random data 18 ms
+LOG: setup_rng: (QUICK) 160: 734991 ms
+LOG: -- set up keys 752519 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 21 ms
+-------- fold prove --------
+LOG: -------- commit_m 21 ms
+LOG: -------- commit_a 7 ms
+LOG: -------- commit_qa 30 ms
+LOG: ---------- commit_b 8 ms
+LOG: ---------- compute q_b 61 ms
+LOG: ---------- commit_q_b and commit_p 17 ms
+LOG: ---------- compute b_gamma, t_gamma... 955 us
+LOG: ---------- compute h(X) 26 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 6 ms
+LOG: ---------- compute zk_qa0 DLOG 19 ms
+LOG: ------ fold prove cq 201 ms
+LOG: -- range proof step 1: build query table 23 ms
+LOG: -- range proof step 2: prove cq 1852 ms
+LOG: -- range proof step 3: build wit 22 ms
+LOG: -- range proof step 4: prove_qa_nizk 93 ms
+LOG: ------ range proof  1993 ms
+LOG: ------ compute q_o 18 ms
+LOG: ------ weighted kzg proof 155 ms
+LOG: ---- pn_lookup proof 2391 ms
+LOG: ---- compute com_v 561 us
+LOG: ---- compute com_u 9 ms
+LOG: ---- compute q 117 ms
+LOG: ---- commit q 7 ms
+LOG: ---- commit u 16 ms
+LOG: ---- batch kzg 57 ms
+LOG: ---- dlog  9 ms
+REPORT_op: asset1, size: 8192, time: 2610 ms, np: 32
+LOG: -- prove work 2610 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 65536, query_size: 16384
+LOG: gen_kzg_key: 65536 549 ms
+LOG: preprocess: 65536 17828 ms
+REPORT_op: cq, size: 16384, time: 296 ms, np: 32
+LOG: prove_cq: 65536 296 ms
+LOG: slow_verify_cq 65536 15 ms
+LOG: fast_verify_cq65536 12 ms
+LOG: gen_rand_eles: 16384 1 ms
+LOG: --** row1 and row 2 223 ms
+LOG: --** row3 258 ms
+LOG: --** set up qanizk 19585 ms
+LOG: --** setup_kzg 6765 ms
+LOG: --** cq_aux qanizk 352032 ms
+LOG: setup_rng (FULL): 160: 380091 ms
+LOG: setup range proof keys: 16384 380105 ms
+LOG: produce two commits: 16384 150 ms
+LOG: -- range proof step 1: build query table 48 ms
+LOG: -- range proof step 2: prove cq 3055 ms
+LOG: -- range proof step 3: build wit 36 ms
+LOG: -- range proof step 4: prove_qa_nizk 188 ms
+REPORT_op: range, size: 16384, time: 3329 ms, np: 32
+LOG: prove: 16384 3329 ms
+LOG: verify: 16384 15 ms
+Profile PN Lookup: look size: 65536, query size: 16384
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 37 ms
+LOG: setup_rng: (QUICK) 160: 777687 ms
+LOG: -- setup pnlookup 814364 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 48 ms
+-------- fold prove --------
+LOG: -------- commit_m 32 ms
+LOG: -------- commit_a 16 ms
+LOG: -------- commit_qa 70 ms
+LOG: ---------- commit_b 15 ms
+LOG: ---------- compute q_b 107 ms
+LOG: ---------- commit_q_b and commit_p 34 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 32 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 12 ms
+LOG: ---------- compute zk_qa0 DLOG 33 ms
+LOG: ------ fold prove cq 356 ms
+LOG: -- range proof step 1: build query table 37 ms
+LOG: -- range proof step 2: prove cq 3130 ms
+LOG: -- range proof step 3: build wit 55 ms
+LOG: -- range proof step 4: prove_qa_nizk 116 ms
+LOG: ------ range proof  3341 ms
+LOG: ------ compute q_o 27 ms
+LOG: ------ weighted kzg proof 189 ms
+REPORT_op: pn_lookup, size: 16384, time: 3965 ms, np: 32
+LOG: -- prove pnlookup 3965 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 65536, query_size: 16384
+LOG: -- generate random data 37 ms
+LOG: setup_rng: (QUICK) 160: 778094 ms
+LOG: -- set up keys 814767 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 39 ms
+-------- fold prove --------
+LOG: -------- commit_m 39 ms
+LOG: -------- commit_a 13 ms
+LOG: -------- commit_qa 57 ms
+LOG: ---------- commit_b 15 ms
+LOG: ---------- compute q_b 108 ms
+LOG: ---------- commit_q_b and commit_p 34 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 34 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 12 ms
+LOG: ---------- compute zk_qa0 DLOG 32 ms
+LOG: ------ fold prove cq 350 ms
+LOG: -- range proof step 1: build query table 38 ms
+LOG: -- range proof step 2: prove cq 3598 ms
+LOG: -- range proof step 3: build wit 36 ms
+LOG: -- range proof step 4: prove_qa_nizk 186 ms
+LOG: ------ range proof  3860 ms
+LOG: ------ compute q_o 27 ms
+LOG: ------ weighted kzg proof 245 ms
+LOG: ---- pn_lookup proof 4524 ms
+LOG: ---- compute com_v 558 us
+LOG: ---- compute com_u 16 ms
+LOG: ---- compute q 160 ms
+LOG: ---- commit q 15 ms
+LOG: ---- commit u 32 ms
+LOG: ---- batch kzg 83 ms
+LOG: ---- dlog  15 ms
+REPORT_op: asset1, size: 16384, time: 4849 ms, np: 32
+LOG: -- prove work 4849 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 32, lookup_size: 131072, query_size: 32768
+LOG: gen_kzg_key: 131072 996 ms
+LOG: preprocess: 131072 37734 ms
+REPORT_op: cq, size: 32768, time: 550 ms, np: 32
+LOG: prove_cq: 131072 550 ms
+LOG: slow_verify_cq 131072 15 ms
+LOG: fast_verify_cq131072 12 ms
+LOG: gen_rand_eles: 32768 2 ms
+LOG: --** row1 and row 2 472 ms
+LOG: --** row3 481 ms
+LOG: --** set up qanizk 39161 ms
+LOG: --** setup_kzg 6828 ms
+LOG: --** cq_aux qanizk 351938 ms
+LOG: setup_rng (FULL): 160: 400219 ms
+LOG: setup range proof keys: 32768 400234 ms
+LOG: produce two commits: 32768 287 ms
+LOG: -- range proof step 1: build query table 101 ms
+LOG: -- range proof step 2: prove cq 5959 ms
+LOG: -- range proof step 3: build wit 66 ms
+LOG: -- range proof step 4: prove_qa_nizk 339 ms
+REPORT_op: range, size: 32768, time: 6466 ms, np: 32
+LOG: prove: 32768 6466 ms
+LOG: verify: 32768 15 ms
+Profile PN Lookup: look size: 131072, query size: 32768
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 77 ms
+LOG: setup_rng: (QUICK) 160: 864443 ms
+LOG: -- setup pnlookup 941989 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 93 ms
+-------- fold prove --------
+LOG: -------- commit_m 85 ms
+LOG: -------- commit_a 30 ms
+LOG: -------- commit_qa 141 ms
+LOG: ---------- commit_b 30 ms
+LOG: ---------- compute q_b 204 ms
+LOG: ---------- commit_q_b and commit_p 58 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 46 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 24 ms
+LOG: ---------- compute zk_qa0 DLOG 59 ms
+LOG: ------ fold prove cq 683 ms
+LOG: -- range proof step 1: build query table 66 ms
+LOG: -- range proof step 2: prove cq 6148 ms
+LOG: -- range proof step 3: build wit 108 ms
+LOG: -- range proof step 4: prove_qa_nizk 186 ms
+LOG: ------ range proof  6511 ms
+LOG: ------ compute q_o 41 ms
+LOG: ------ weighted kzg proof 305 ms
+REPORT_op: pn_lookup, size: 32768, time: 7636 ms, np: 32
+LOG: -- prove pnlookup 7636 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 131072, query_size: 32768
+LOG: -- generate random data 77 ms
+LOG: setup_rng: (QUICK) 160: 864961 ms
+LOG: -- set up keys 942427 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 75 ms
+-------- fold prove --------
+LOG: -------- commit_m 78 ms
+LOG: -------- commit_a 25 ms
+LOG: -------- commit_qa 116 ms
+LOG: ---------- commit_b 30 ms
+LOG: ---------- compute q_b 205 ms
+LOG: ---------- commit_q_b and commit_p 59 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 47 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 24 ms
+LOG: ---------- compute zk_qa0 DLOG 57 ms
+LOG: ------ fold prove cq 647 ms
+LOG: -- range proof step 1: build query table 74 ms
+LOG: -- range proof step 2: prove cq 7066 ms
+LOG: -- range proof step 3: build wit 89 ms
+LOG: -- range proof step 4: prove_qa_nizk 333 ms
+LOG: ------ range proof  7565 ms
+LOG: ------ compute q_o 40 ms
+LOG: ------ weighted kzg proof 403 ms
+LOG: ---- pn_lookup proof 8733 ms
+LOG: ---- compute com_v 887 us
+LOG: ---- compute com_u 30 ms
+LOG: ---- compute q 235 ms
+LOG: ---- commit q 28 ms
+LOG: ---- commit u 62 ms
+LOG: ---- batch kzg 134 ms
+LOG: ---- dlog  29 ms
+REPORT_op: asset1, size: 32768, time: 9255 ms, np: 32
+LOG: -- prove work 9255 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 1024, query_size: 256
+LOG: gen_kzg_key: 1024 51 ms
+LOG: preprocess: 1024 1327 ms
+REPORT_op: cq, size: 256, time: 41 ms, np: 16
+LOG: prove_cq: 1024 41 ms
+LOG: slow_verify_cq 1024 15 ms
+LOG: fast_verify_cq1024 12 ms
+LOG: gen_rand_eles: 256 517 us
+LOG: setup_rng: (QUICK) 160: 692002 ms
+LOG: setup range proof keys: 256 692021 ms
+LOG: produce two commits: 256 5 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 209 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 4 ms
+REPORT_op: range, size: 256, time: 216 ms, np: 16
+LOG: prove: 256 216 ms
+LOG: verify: 256 15 ms
+Profile PN Lookup: look size: 1024, query size: 256
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 859 us
+LOG: setup_rng: (QUICK) 160: 692031 ms
+LOG: -- setup pnlookup 694768 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 5 ms
+LOG: ---------- commit_b 1 ms
+LOG: ---------- compute q_b 11 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 632 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 46 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 209 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 3 ms
+LOG: ------ range proof  215 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 39 ms
+REPORT_op: pn_lookup, size: 256, time: 311 ms, np: 16
+LOG: -- prove pnlookup 311 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 1024, query_size: 256
+LOG: -- generate random data 860 us
+LOG: setup_rng: (QUICK) 160: 692099 ms
+LOG: -- set up keys 694799 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 2 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 4 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 9 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 716 us
+LOG: ---------- compute h(X) 8 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 43 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 214 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 4 ms
+LOG: ------ range proof  221 ms
+LOG: ------ compute q_o 4 ms
+LOG: ------ weighted kzg proof 43 ms
+LOG: ---- pn_lookup proof 317 ms
+LOG: ---- compute com_v 237 us
+LOG: ---- compute com_u 2 ms
+LOG: ---- compute q 15 ms
+LOG: ---- commit q 1 ms
+LOG: ---- commit u 3 ms
+LOG: ---- batch kzg 18 ms
+LOG: ---- dlog  2 ms
+REPORT_op: asset1, size: 256, time: 363 ms, np: 16
+LOG: -- prove work 363 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 2048, query_size: 512
+LOG: gen_kzg_key: 2048 71 ms
+LOG: preprocess: 2048 1795 ms
+REPORT_op: cq, size: 512, time: 43 ms, np: 16
+LOG: prove_cq: 2048 43 ms
+LOG: slow_verify_cq 2048 15 ms
+LOG: fast_verify_cq2048 12 ms
+LOG: gen_rand_eles: 512 372 us
+LOG: setup_rng: (QUICK) 160: 693665 ms
+LOG: setup range proof keys: 512 693685 ms
+LOG: produce two commits: 512 6 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 247 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+REPORT_op: range, size: 512, time: 259 ms, np: 16
+LOG: prove: 512 259 ms
+LOG: verify: 512 15 ms
+Profile PN Lookup: look size: 2048, query size: 512
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 693679 ms
+LOG: -- setup pnlookup 697254 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 6 ms
+-------- fold prove --------
+LOG: -------- commit_m 4 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 6 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 11 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 440 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 50 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 258 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 4 ms
+LOG: ------ range proof  268 ms
+LOG: ------ compute q_o 6 ms
+LOG: ------ weighted kzg proof 40 ms
+REPORT_op: pn_lookup, size: 512, time: 371 ms, np: 16
+LOG: -- prove pnlookup 371 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 2048, query_size: 512
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 693459 ms
+LOG: -- set up keys 697040 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 5 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 1 ms
+LOG: -------- commit_qa 6 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 384 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 46 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 281 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+LOG: ------ range proof  292 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 43 ms
+LOG: ---- pn_lookup proof 394 ms
+LOG: ---- compute com_v 244 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 21 ms
+LOG: ---- commit q 1 ms
+LOG: ---- commit u 3 ms
+LOG: ---- batch kzg 17 ms
+LOG: ---- dlog  2 ms
+REPORT_op: asset1, size: 512, time: 444 ms, np: 16
+LOG: -- prove work 444 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 4096, query_size: 1024
+LOG: gen_kzg_key: 4096 96 ms
+LOG: preprocess: 4096 2431 ms
+REPORT_op: cq, size: 1024, time: 56 ms, np: 16
+LOG: prove_cq: 4096 56 ms
+LOG: slow_verify_cq 4096 15 ms
+LOG: fast_verify_cq4096 12 ms
+LOG: gen_rand_eles: 1024 449 us
+LOG: setup_rng: (QUICK) 160: 696317 ms
+LOG: setup range proof keys: 1024 696336 ms
+LOG: produce two commits: 1024 12 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 372 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+REPORT_op: range, size: 1024, time: 391 ms, np: 16
+LOG: prove: 1024 391 ms
+LOG: verify: 1024 15 ms
+Profile PN Lookup: look size: 4096, query size: 1024
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 2 ms
+LOG: setup_rng: (QUICK) 160: 696452 ms
+LOG: -- setup pnlookup 701439 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 8 ms
+-------- fold prove --------
+LOG: -------- commit_m 5 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 10 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 15 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 642 us
+LOG: ---------- compute h(X) 10 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 9 ms
+LOG: ------ fold prove cq 66 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 399 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 9 ms
+LOG: ------ range proof  415 ms
+LOG: ------ compute q_o 7 ms
+LOG: ------ weighted kzg proof 52 ms
+REPORT_op: pn_lookup, size: 1024, time: 551 ms, np: 16
+LOG: -- prove pnlookup 551 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 4096, query_size: 1024
+LOG: -- generate random data 2 ms
+LOG: setup_rng: (QUICK) 160: 696168 ms
+LOG: -- set up keys 701162 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 7 ms
+-------- fold prove --------
+LOG: -------- commit_m 5 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 8 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 13 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 457 us
+LOG: ---------- compute h(X) 10 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 8 ms
+LOG: ------ fold prove cq 61 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 446 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+LOG: ------ range proof  467 ms
+LOG: ------ compute q_o 6 ms
+LOG: ------ weighted kzg proof 53 ms
+LOG: ---- pn_lookup proof 597 ms
+LOG: ---- compute com_v 251 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 44 ms
+LOG: ---- commit q 2 ms
+LOG: ---- commit u 5 ms
+LOG: ---- batch kzg 19 ms
+LOG: ---- dlog  3 ms
+REPORT_op: asset1, size: 1024, time: 677 ms, np: 16
+LOG: -- prove work 677 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 8192, query_size: 2048
+LOG: gen_kzg_key: 8192 162 ms
+LOG: preprocess: 8192 4089 ms
+REPORT_op: cq, size: 2048, time: 82 ms, np: 16
+LOG: prove_cq: 8192 82 ms
+LOG: slow_verify_cq 8192 15 ms
+LOG: fast_verify_cq8192 12 ms
+LOG: gen_rand_eles: 2048 587 us
+LOG: setup_rng: (QUICK) 160: 701726 ms
+LOG: setup range proof keys: 2048 701745 ms
+LOG: produce two commits: 2048 23 ms
+LOG: -- range proof step 1: build query table 4 ms
+LOG: -- range proof step 2: prove cq 640 ms
+LOG: -- range proof step 3: build wit 5 ms
+LOG: -- range proof step 4: prove_qa_nizk 27 ms
+REPORT_op: range, size: 2048, time: 678 ms, np: 16
+LOG: prove: 2048 678 ms
+LOG: verify: 2048 15 ms
+Profile PN Lookup: look size: 8192, query size: 2048
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 4 ms
+LOG: setup_rng: (QUICK) 160: 701892 ms
+LOG: -- setup pnlookup 710272 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 14 ms
+-------- fold prove --------
+LOG: -------- commit_m 9 ms
+LOG: -------- commit_a 5 ms
+LOG: -------- commit_qa 20 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 21 ms
+LOG: ---------- commit_q_b and commit_p 10 ms
+LOG: ---------- compute b_gamma, t_gamma... 505 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 3 ms
+LOG: ---------- compute zk_qa0 DLOG 13 ms
+LOG: ------ fold prove cq 102 ms
+LOG: -- range proof step 1: build query table 5 ms
+LOG: -- range proof step 2: prove cq 687 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 18 ms
+LOG: ------ range proof  717 ms
+LOG: ------ compute q_o 9 ms
+LOG: ------ weighted kzg proof 62 ms
+REPORT_op: pn_lookup, size: 2048, time: 906 ms, np: 16
+LOG: -- prove pnlookup 906 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 8192, query_size: 2048
+LOG: -- generate random data 4 ms
+LOG: setup_rng: (QUICK) 160: 701686 ms
+LOG: -- set up keys 710072 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 12 ms
+-------- fold prove --------
+LOG: -------- commit_m 8 ms
+LOG: -------- commit_a 4 ms
+LOG: -------- commit_qa 17 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 20 ms
+LOG: ---------- commit_q_b and commit_p 10 ms
+LOG: ---------- compute b_gamma, t_gamma... 671 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 3 ms
+LOG: ---------- compute zk_qa0 DLOG 12 ms
+LOG: ------ fold prove cq 96 ms
+LOG: -- range proof step 1: build query table 5 ms
+LOG: -- range proof step 2: prove cq 784 ms
+LOG: -- range proof step 3: build wit 5 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  823 ms
+LOG: ------ compute q_o 9 ms
+LOG: ------ weighted kzg proof 78 ms
+LOG: ---- pn_lookup proof 1020 ms
+LOG: ---- compute com_v 273 us
+LOG: ---- compute com_u 5 ms
+LOG: ---- compute q 56 ms
+LOG: ---- commit q 4 ms
+LOG: ---- commit u 10 ms
+LOG: ---- batch kzg 32 ms
+LOG: ---- dlog  5 ms
+REPORT_op: asset1, size: 2048, time: 1136 ms, np: 16
+LOG: -- prove work 1136 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 16384, query_size: 4096
+LOG: gen_kzg_key: 16384 284 ms
+LOG: preprocess: 16384 7941 ms
+REPORT_op: cq, size: 4096, time: 133 ms, np: 16
+LOG: prove_cq: 16384 133 ms
+LOG: slow_verify_cq 16384 15 ms
+LOG: fast_verify_cq16384 12 ms
+LOG: gen_rand_eles: 4096 834 us
+LOG: setup_rng: (QUICK) 160: 712656 ms
+LOG: setup range proof keys: 4096 712676 ms
+LOG: produce two commits: 4096 41 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 1144 ms
+LOG: -- range proof step 3: build wit 10 ms
+LOG: -- range proof step 4: prove_qa_nizk 47 ms
+REPORT_op: range, size: 4096, time: 1209 ms, np: 16
+LOG: prove: 4096 1209 ms
+LOG: verify: 4096 15 ms
+Profile PN Lookup: look size: 16384, query size: 4096
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 9 ms
+LOG: setup_rng: (QUICK) 160: 712680 ms
+LOG: -- setup pnlookup 728928 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 15 ms
+-------- fold prove --------
+LOG: -------- commit_m 13 ms
+LOG: -------- commit_a 9 ms
+LOG: -------- commit_qa 37 ms
+LOG: ---------- commit_b 9 ms
+LOG: ---------- compute q_b 33 ms
+LOG: ---------- commit_q_b and commit_p 17 ms
+LOG: ---------- compute b_gamma, t_gamma... 624 us
+LOG: ---------- compute h(X) 15 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 20 ms
+LOG: ------ fold prove cq 164 ms
+LOG: -- range proof step 1: build query table 15 ms
+LOG: -- range proof step 2: prove cq 1214 ms
+LOG: -- range proof step 3: build wit 11 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  1270 ms
+LOG: ------ compute q_o 11 ms
+LOG: ------ weighted kzg proof 82 ms
+REPORT_op: pn_lookup, size: 4096, time: 1545 ms, np: 16
+LOG: -- prove pnlookup 1545 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 16384, query_size: 4096
+LOG: -- generate random data 9 ms
+LOG: setup_rng: (QUICK) 160: 712524 ms
+LOG: -- set up keys 728795 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 13 ms
+-------- fold prove --------
+LOG: -------- commit_m 11 ms
+LOG: -------- commit_a 8 ms
+LOG: -------- commit_qa 32 ms
+LOG: ---------- commit_b 9 ms
+LOG: ---------- compute q_b 33 ms
+LOG: ---------- commit_q_b and commit_p 17 ms
+LOG: ---------- compute b_gamma, t_gamma... 566 us
+LOG: ---------- compute h(X) 15 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 19 ms
+LOG: ------ fold prove cq 155 ms
+LOG: -- range proof step 1: build query table 9 ms
+LOG: -- range proof step 2: prove cq 1408 ms
+LOG: -- range proof step 3: build wit 11 ms
+LOG: -- range proof step 4: prove_qa_nizk 46 ms
+LOG: ------ range proof  1477 ms
+LOG: ------ compute q_o 11 ms
+LOG: ------ weighted kzg proof 113 ms
+LOG: ---- pn_lookup proof 1771 ms
+LOG: ---- compute com_v 322 us
+LOG: ---- compute com_u 6 ms
+LOG: ---- compute q 71 ms
+LOG: ---- commit q 7 ms
+LOG: ---- commit u 15 ms
+LOG: ---- batch kzg 41 ms
+LOG: ---- dlog  9 ms
+REPORT_op: asset1, size: 4096, time: 1922 ms, np: 16
+LOG: -- prove work 1922 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 32768, query_size: 8192
+LOG: gen_kzg_key: 32768 516 ms
+LOG: preprocess: 32768 16676 ms
+REPORT_op: cq, size: 8192, time: 218 ms, np: 16
+LOG: prove_cq: 32768 218 ms
+LOG: slow_verify_cq 32768 15 ms
+LOG: fast_verify_cq32768 12 ms
+LOG: gen_rand_eles: 8192 1 ms
+LOG: setup_rng: (QUICK) 160: 734402 ms
+LOG: setup range proof keys: 8192 734423 ms
+LOG: produce two commits: 8192 118 ms
+LOG: -- range proof step 1: build query table 15 ms
+LOG: -- range proof step 2: prove cq 2093 ms
+LOG: -- range proof step 3: build wit 17 ms
+LOG: -- range proof step 4: prove_qa_nizk 93 ms
+REPORT_op: range, size: 8192, time: 2219 ms, np: 16
+LOG: prove: 8192 2219 ms
+LOG: verify: 8192 15 ms
+Profile PN Lookup: look size: 32768, query size: 8192
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 18 ms
+LOG: setup_rng: (QUICK) 160: 734553 ms
+LOG: -- setup pnlookup 768493 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 25 ms
+-------- fold prove --------
+LOG: -------- commit_m 21 ms
+LOG: -------- commit_a 15 ms
+LOG: -------- commit_qa 71 ms
+LOG: ---------- commit_b 15 ms
+LOG: ---------- compute q_b 56 ms
+LOG: ---------- commit_q_b and commit_p 32 ms
+LOG: ---------- compute b_gamma, t_gamma... 650 us
+LOG: ---------- compute h(X) 19 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 12 ms
+LOG: ---------- compute zk_qa0 DLOG 30 ms
+LOG: ------ fold prove cq 276 ms
+LOG: -- range proof step 1: build query table 18 ms
+LOG: -- range proof step 2: prove cq 2221 ms
+LOG: -- range proof step 3: build wit 18 ms
+LOG: -- range proof step 4: prove_qa_nizk 56 ms
+LOG: ------ range proof  2315 ms
+LOG: ------ compute q_o 16 ms
+LOG: ------ weighted kzg proof 121 ms
+REPORT_op: pn_lookup, size: 8192, time: 2756 ms, np: 16
+LOG: -- prove pnlookup 2756 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 32768, query_size: 8192
+LOG: -- generate random data 18 ms
+LOG: setup_rng: (QUICK) 160: 734299 ms
+LOG: -- set up keys 768266 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 21 ms
+-------- fold prove --------
+LOG: -------- commit_m 20 ms
+LOG: -------- commit_a 12 ms
+LOG: -------- commit_qa 58 ms
+LOG: ---------- commit_b 15 ms
+LOG: ---------- compute q_b 57 ms
+LOG: ---------- commit_q_b and commit_p 32 ms
+LOG: ---------- compute b_gamma, t_gamma... 715 us
+LOG: ---------- compute h(X) 19 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 12 ms
+LOG: ---------- compute zk_qa0 DLOG 28 ms
+LOG: ------ fold prove cq 258 ms
+LOG: -- range proof step 1: build query table 25 ms
+LOG: -- range proof step 2: prove cq 2548 ms
+LOG: -- range proof step 3: build wit 23 ms
+LOG: -- range proof step 4: prove_qa_nizk 93 ms
+LOG: ------ range proof  2691 ms
+LOG: ------ compute q_o 16 ms
+LOG: ------ weighted kzg proof 191 ms
+LOG: ---- pn_lookup proof 3180 ms
+LOG: ---- compute com_v 403 us
+LOG: ---- compute com_u 9 ms
+LOG: ---- compute q 97 ms
+LOG: ---- commit q 14 ms
+LOG: ---- commit u 29 ms
+LOG: ---- batch kzg 66 ms
+LOG: ---- dlog  14 ms
+REPORT_op: asset1, size: 8192, time: 3413 ms, np: 16
+LOG: -- prove work 3413 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 65536, query_size: 16384
+LOG: gen_kzg_key: 65536 933 ms
+LOG: preprocess: 65536 35546 ms
+REPORT_op: cq, size: 16384, time: 400 ms, np: 16
+LOG: prove_cq: 65536 400 ms
+LOG: slow_verify_cq 65536 15 ms
+LOG: fast_verify_cq65536 12 ms
+LOG: gen_rand_eles: 16384 2 ms
+LOG: setup_rng: (QUICK) 160: 777862 ms
+LOG: setup range proof keys: 16384 777880 ms
+LOG: produce two commits: 16384 152 ms
+LOG: -- range proof step 1: build query table 39 ms
+LOG: -- range proof step 2: prove cq 4007 ms
+LOG: -- range proof step 3: build wit 32 ms
+LOG: -- range proof step 4: prove_qa_nizk 188 ms
+REPORT_op: range, size: 16384, time: 4268 ms, np: 16
+LOG: prove: 16384 4268 ms
+LOG: verify: 16384 15 ms
+Profile PN Lookup: look size: 65536, query size: 16384
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 38 ms
+LOG: setup_rng: (QUICK) 160: 778152 ms
+LOG: -- setup pnlookup 850315 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 47 ms
+-------- fold prove --------
+LOG: -------- commit_m 43 ms
+LOG: -------- commit_a 29 ms
+LOG: -------- commit_qa 139 ms
+LOG: ---------- commit_b 29 ms
+LOG: ---------- compute q_b 102 ms
+LOG: ---------- commit_q_b and commit_p 64 ms
+LOG: ---------- compute b_gamma, t_gamma... 801 us
+LOG: ---------- compute h(X) 25 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 23 ms
+LOG: ---------- compute zk_qa0 DLOG 54 ms
+LOG: ------ fold prove cq 514 ms
+LOG: -- range proof step 1: build query table 41 ms
+LOG: -- range proof step 2: prove cq 4281 ms
+LOG: -- range proof step 3: build wit 50 ms
+LOG: -- range proof step 4: prove_qa_nizk 111 ms
+LOG: ------ range proof  4485 ms
+LOG: ------ compute q_o 24 ms
+LOG: ------ weighted kzg proof 201 ms
+REPORT_op: pn_lookup, size: 16384, time: 5275 ms, np: 16
+LOG: -- prove pnlookup 5275 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 65536, query_size: 16384
+LOG: -- generate random data 38 ms
+LOG: setup_rng: (QUICK) 160: 777603 ms
+LOG: -- set up keys 849789 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 39 ms
+-------- fold prove --------
+LOG: -------- commit_m 39 ms
+LOG: -------- commit_a 24 ms
+LOG: -------- commit_qa 112 ms
+LOG: ---------- commit_b 29 ms
+LOG: ---------- compute q_b 102 ms
+LOG: ---------- commit_q_b and commit_p 64 ms
+LOG: ---------- compute b_gamma, t_gamma... 936 us
+LOG: ---------- compute h(X) 26 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 23 ms
+LOG: ---------- compute zk_qa0 DLOG 51 ms
+LOG: ------ fold prove cq 477 ms
+LOG: -- range proof step 1: build query table 37 ms
+LOG: -- range proof step 2: prove cq 4971 ms
+LOG: -- range proof step 3: build wit 43 ms
+LOG: -- range proof step 4: prove_qa_nizk 185 ms
+LOG: ------ range proof  5238 ms
+LOG: ------ compute q_o 24 ms
+LOG: ------ weighted kzg proof 318 ms
+LOG: ---- pn_lookup proof 6099 ms
+LOG: ---- compute com_v 566 us
+LOG: ---- compute com_u 16 ms
+LOG: ---- compute q 153 ms
+LOG: ---- commit q 28 ms
+LOG: ---- commit u 58 ms
+LOG: ---- batch kzg 105 ms
+LOG: ---- dlog  26 ms
+REPORT_op: asset1, size: 16384, time: 6490 ms, np: 16
+LOG: -- prove work 6490 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 16, lookup_size: 131072, query_size: 32768
+LOG: gen_kzg_key: 131072 1743 ms
+LOG: preprocess: 131072 75238 ms
+REPORT_op: cq, size: 32768, time: 755 ms, np: 16
+LOG: prove_cq: 131072 755 ms
+LOG: slow_verify_cq 131072 15 ms
+LOG: fast_verify_cq131072 12 ms
+LOG: gen_rand_eles: 32768 3 ms
+LOG: setup_rng: (QUICK) 160: 864587 ms
+LOG: setup range proof keys: 32768 864609 ms
+LOG: produce two commits: 32768 489 ms
+LOG: -- range proof step 1: build query table 85 ms
+LOG: -- range proof step 2: prove cq 7864 ms
+LOG: -- range proof step 3: build wit 90 ms
+LOG: -- range proof step 4: prove_qa_nizk 350 ms
+REPORT_op: range, size: 32768, time: 8391 ms, np: 16
+LOG: prove: 32768 8391 ms
+LOG: verify: 32768 15 ms
+Profile PN Lookup: look size: 131072, query size: 32768
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 81 ms
+LOG: setup_rng: (QUICK) 160: 864923 ms
+LOG: -- setup pnlookup 1017508 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 93 ms
+-------- fold prove --------
+LOG: -------- commit_m 85 ms
+LOG: -------- commit_a 57 ms
+LOG: -------- commit_qa 278 ms
+LOG: ---------- commit_b 57 ms
+LOG: ---------- compute q_b 198 ms
+LOG: ---------- commit_q_b and commit_p 112 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 40 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 46 ms
+LOG: ---------- compute zk_qa0 DLOG 103 ms
+LOG: ------ fold prove cq 982 ms
+LOG: -- range proof step 1: build query table 78 ms
+LOG: -- range proof step 2: prove cq 8362 ms
+LOG: -- range proof step 3: build wit 70 ms
+LOG: -- range proof step 4: prove_qa_nizk 186 ms
+LOG: ------ range proof  8699 ms
+LOG: ------ compute q_o 40 ms
+LOG: ------ weighted kzg proof 335 ms
+REPORT_op: pn_lookup, size: 32768, time: 10152 ms, np: 16
+LOG: -- prove pnlookup 10152 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 131072, query_size: 32768
+LOG: -- generate random data 80 ms
+LOG: setup_rng: (QUICK) 160: 864692 ms
+LOG: -- set up keys 1017261 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 75 ms
+-------- fold prove --------
+LOG: -------- commit_m 76 ms
+LOG: -------- commit_a 48 ms
+LOG: -------- commit_qa 228 ms
+LOG: ---------- commit_b 57 ms
+LOG: ---------- compute q_b 198 ms
+LOG: ---------- commit_q_b and commit_p 112 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 41 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 46 ms
+LOG: ---------- compute zk_qa0 DLOG 95 ms
+LOG: ------ fold prove cq 908 ms
+LOG: -- range proof step 1: build query table 73 ms
+LOG: -- range proof step 2: prove cq 9631 ms
+LOG: -- range proof step 3: build wit 101 ms
+LOG: -- range proof step 4: prove_qa_nizk 336 ms
+LOG: ------ range proof  10144 ms
+LOG: ------ compute q_o 41 ms
+LOG: ------ weighted kzg proof 575 ms
+LOG: ---- pn_lookup proof 11747 ms
+LOG: ---- compute com_v 893 us
+LOG: ---- compute com_u 29 ms
+LOG: ---- compute q 256 ms
+LOG: ---- commit q 55 ms
+LOG: ---- commit u 115 ms
+LOG: ---- batch kzg 192 ms
+LOG: ---- dlog  51 ms
+REPORT_op: asset1, size: 32768, time: 12450 ms, np: 16
+LOG: -- prove work 12450 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 1024, query_size: 256
+LOG: gen_kzg_key: 1024 61 ms
+LOG: preprocess: 1024 1447 ms
+REPORT_op: cq, size: 256, time: 38 ms, np: 8
+LOG: prove_cq: 1024 38 ms
+LOG: slow_verify_cq 1024 15 ms
+LOG: fast_verify_cq1024 12 ms
+LOG: gen_rand_eles: 256 318 us
+LOG: setup_rng: (QUICK) 160: 692529 ms
+LOG: setup range proof keys: 256 692551 ms
+LOG: produce two commits: 256 5 ms
+LOG: -- range proof step 1: build query table 966 us
+LOG: -- range proof step 2: prove cq 248 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 3 ms
+REPORT_op: range, size: 256, time: 254 ms, np: 8
+LOG: prove: 256 254 ms
+LOG: verify: 256 15 ms
+Profile PN Lookup: look size: 1024, query size: 256
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 755 us
+LOG: setup_rng: (QUICK) 160: 692200 ms
+LOG: -- setup pnlookup 695201 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 6 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 7 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 293 us
+LOG: ---------- compute h(X) 7 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 43 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 261 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 3 ms
+LOG: ------ range proof  267 ms
+LOG: ------ compute q_o 4 ms
+LOG: ------ weighted kzg proof 33 ms
+REPORT_op: pn_lookup, size: 256, time: 354 ms, np: 8
+LOG: -- prove pnlookup 354 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 1024, query_size: 256
+LOG: -- generate random data 743 us
+LOG: setup_rng: (QUICK) 160: 692296 ms
+LOG: -- set up keys 695294 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 4 ms
+-------- fold prove --------
+LOG: -------- commit_m 3 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 5 ms
+LOG: ---------- commit_b 2 ms
+LOG: ---------- compute q_b 7 ms
+LOG: ---------- commit_q_b and commit_p 3 ms
+LOG: ---------- compute b_gamma, t_gamma... 375 us
+LOG: ---------- compute h(X) 7 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 1 ms
+LOG: ---------- compute zk_qa0 DLOG 7 ms
+LOG: ------ fold prove cq 42 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 285 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 3 ms
+LOG: ------ range proof  292 ms
+LOG: ------ compute q_o 4 ms
+LOG: ------ weighted kzg proof 38 ms
+LOG: ---- pn_lookup proof 382 ms
+LOG: ---- compute com_v 244 us
+LOG: ---- compute com_u 2 ms
+LOG: ---- compute q 12 ms
+LOG: ---- commit q 2 ms
+LOG: ---- commit u 4 ms
+LOG: ---- batch kzg 16 ms
+LOG: ---- dlog  3 ms
+REPORT_op: asset1, size: 256, time: 422 ms, np: 8
+LOG: -- prove work 422 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 2048, query_size: 512
+LOG: gen_kzg_key: 2048 93 ms
+LOG: preprocess: 2048 2281 ms
+REPORT_op: cq, size: 512, time: 51 ms, np: 8
+LOG: prove_cq: 2048 51 ms
+LOG: slow_verify_cq 2048 15 ms
+LOG: fast_verify_cq2048 12 ms
+LOG: gen_rand_eles: 512 430 us
+LOG: setup_rng: (QUICK) 160: 693821 ms
+LOG: setup range proof keys: 512 693841 ms
+LOG: produce two commits: 512 8 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 338 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+REPORT_op: range, size: 512, time: 349 ms, np: 8
+LOG: prove: 512 349 ms
+LOG: verify: 512 15 ms
+Profile PN Lookup: look size: 2048, query size: 512
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 693595 ms
+LOG: -- setup pnlookup 698313 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 7 ms
+-------- fold prove --------
+LOG: -------- commit_m 5 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 11 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 312 us
+LOG: ---------- compute h(X) 8 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 9 ms
+LOG: ------ fold prove cq 61 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 361 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 6 ms
+LOG: ------ range proof  371 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 39 ms
+REPORT_op: pn_lookup, size: 512, time: 485 ms, np: 8
+LOG: -- prove pnlookup 485 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 2048, query_size: 512
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 693602 ms
+LOG: -- set up keys 698323 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 7 ms
+-------- fold prove --------
+LOG: -------- commit_m 4 ms
+LOG: -------- commit_a 2 ms
+LOG: -------- commit_qa 9 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 351 us
+LOG: ---------- compute h(X) 8 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 9 ms
+LOG: ------ fold prove cq 58 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 400 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 7 ms
+LOG: ------ range proof  411 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 47 ms
+LOG: ---- pn_lookup proof 530 ms
+LOG: ---- compute com_v 244 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 20 ms
+LOG: ---- commit q 2 ms
+LOG: ---- commit u 5 ms
+LOG: ---- batch kzg 18 ms
+LOG: ---- dlog  3 ms
+REPORT_op: asset1, size: 512, time: 584 ms, np: 8
+LOG: -- prove work 584 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 4096, query_size: 1024
+LOG: gen_kzg_key: 4096 155 ms
+LOG: preprocess: 4096 3805 ms
+REPORT_op: cq, size: 1024, time: 73 ms, np: 8
+LOG: prove_cq: 4096 73 ms
+LOG: slow_verify_cq 4096 15 ms
+LOG: fast_verify_cq4096 12 ms
+LOG: gen_rand_eles: 1024 487 us
+LOG: setup_rng: (QUICK) 160: 696631 ms
+LOG: setup range proof keys: 1024 696650 ms
+LOG: produce two commits: 1024 14 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 504 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+REPORT_op: range, size: 1024, time: 524 ms, np: 8
+LOG: prove: 1024 524 ms
+LOG: verify: 1024 15 ms
+Profile PN Lookup: look size: 4096, query size: 1024
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 2 ms
+LOG: setup_rng: (QUICK) 160: 696351 ms
+LOG: -- setup pnlookup 704166 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 10 ms
+-------- fold prove --------
+LOG: -------- commit_m 6 ms
+LOG: -------- commit_a 4 ms
+LOG: -------- commit_qa 19 ms
+LOG: ---------- commit_b 4 ms
+LOG: ---------- compute q_b 15 ms
+LOG: ---------- commit_q_b and commit_p 11 ms
+LOG: ---------- compute b_gamma, t_gamma... 411 us
+LOG: ---------- compute h(X) 11 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 3 ms
+LOG: ---------- compute zk_qa0 DLOG 12 ms
+LOG: ------ fold prove cq 90 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 537 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 9 ms
+LOG: ------ range proof  553 ms
+LOG: ------ compute q_o 7 ms
+LOG: ------ weighted kzg proof 56 ms
+REPORT_op: pn_lookup, size: 1024, time: 719 ms, np: 8
+LOG: -- prove pnlookup 719 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 4096, query_size: 1024
+LOG: -- generate random data 2 ms
+LOG: setup_rng: (QUICK) 160: 696251 ms
+LOG: -- set up keys 704062 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 9 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 4 ms
+LOG: -------- commit_qa 15 ms
+LOG: ---------- commit_b 4 ms
+LOG: ---------- compute q_b 14 ms
+LOG: ---------- commit_q_b and commit_p 11 ms
+LOG: ---------- compute b_gamma, t_gamma... 295 us
+LOG: ---------- compute h(X) 10 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 3 ms
+LOG: ---------- compute zk_qa0 DLOG 11 ms
+LOG: ------ fold prove cq 84 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 591 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 14 ms
+LOG: ------ range proof  611 ms
+LOG: ------ compute q_o 8 ms
+LOG: ------ weighted kzg proof 72 ms
+LOG: ---- pn_lookup proof 787 ms
+LOG: ---- compute com_v 252 us
+LOG: ---- compute com_u 4 ms
+LOG: ---- compute q 50 ms
+LOG: ---- commit q 4 ms
+LOG: ---- commit u 10 ms
+LOG: ---- batch kzg 27 ms
+LOG: ---- dlog  5 ms
+REPORT_op: asset1, size: 1024, time: 891 ms, np: 8
+LOG: -- prove work 891 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 8192, query_size: 2048
+LOG: gen_kzg_key: 8192 272 ms
+LOG: preprocess: 8192 7410 ms
+REPORT_op: cq, size: 2048, time: 117 ms, np: 8
+LOG: prove_cq: 8192 117 ms
+LOG: slow_verify_cq 8192 15 ms
+LOG: fast_verify_cq8192 12 ms
+LOG: gen_rand_eles: 2048 752 us
+LOG: setup_rng: (QUICK) 160: 701954 ms
+LOG: setup range proof keys: 2048 701973 ms
+LOG: produce two commits: 2048 28 ms
+LOG: -- range proof step 1: build query table 4 ms
+LOG: -- range proof step 2: prove cq 821 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 27 ms
+REPORT_op: range, size: 2048, time: 860 ms, np: 8
+LOG: prove: 2048 860 ms
+LOG: verify: 2048 15 ms
+Profile PN Lookup: look size: 8192, query size: 2048
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 4 ms
+LOG: setup_rng: (QUICK) 160: 701698 ms
+LOG: -- setup pnlookup 716797 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 18 ms
+-------- fold prove --------
+LOG: -------- commit_m 11 ms
+LOG: -------- commit_a 8 ms
+LOG: -------- commit_qa 38 ms
+LOG: ---------- commit_b 8 ms
+LOG: ---------- compute q_b 22 ms
+LOG: ---------- commit_q_b and commit_p 18 ms
+LOG: ---------- compute b_gamma, t_gamma... 371 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 19 ms
+LOG: ------ fold prove cq 149 ms
+LOG: -- range proof step 1: build query table 6 ms
+LOG: -- range proof step 2: prove cq 894 ms
+LOG: -- range proof step 3: build wit 5 ms
+LOG: -- range proof step 4: prove_qa_nizk 18 ms
+LOG: ------ range proof  924 ms
+LOG: ------ compute q_o 10 ms
+LOG: ------ weighted kzg proof 75 ms
+REPORT_op: pn_lookup, size: 2048, time: 1180 ms, np: 8
+LOG: -- prove pnlookup 1180 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 8192, query_size: 2048
+LOG: -- generate random data 4 ms
+LOG: setup_rng: (QUICK) 160: 701744 ms
+LOG: -- set up keys 716836 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 17 ms
+-------- fold prove --------
+LOG: -------- commit_m 11 ms
+LOG: -------- commit_a 7 ms
+LOG: -------- commit_qa 31 ms
+LOG: ---------- commit_b 9 ms
+LOG: ---------- compute q_b 22 ms
+LOG: ---------- commit_q_b and commit_p 18 ms
+LOG: ---------- compute b_gamma, t_gamma... 482 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 19 ms
+LOG: ------ fold prove cq 141 ms
+LOG: -- range proof step 1: build query table 5 ms
+LOG: -- range proof step 2: prove cq 1030 ms
+LOG: -- range proof step 3: build wit 5 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  1069 ms
+LOG: ------ compute q_o 9 ms
+LOG: ------ weighted kzg proof 109 ms
+LOG: ---- pn_lookup proof 1347 ms
+LOG: ---- compute com_v 283 us
+LOG: ---- compute com_u 7 ms
+LOG: ---- compute q 60 ms
+LOG: ---- commit q 9 ms
+LOG: ---- commit u 19 ms
+LOG: ---- batch kzg 39 ms
+LOG: ---- dlog  8 ms
+REPORT_op: asset1, size: 2048, time: 1492 ms, np: 8
+LOG: -- prove work 1492 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 16384, query_size: 4096
+LOG: gen_kzg_key: 16384 493 ms
+LOG: preprocess: 16384 15569 ms
+REPORT_op: cq, size: 4096, time: 195 ms, np: 8
+LOG: prove_cq: 16384 195 ms
+LOG: slow_verify_cq 16384 15 ms
+LOG: fast_verify_cq16384 12 ms
+LOG: gen_rand_eles: 4096 1 ms
+LOG: setup_rng: (QUICK) 160: 712831 ms
+LOG: setup range proof keys: 4096 712853 ms
+LOG: produce two commits: 4096 42 ms
+LOG: -- range proof step 1: build query table 9 ms
+LOG: -- range proof step 2: prove cq 1477 ms
+LOG: -- range proof step 3: build wit 11 ms
+LOG: -- range proof step 4: prove_qa_nizk 47 ms
+REPORT_op: range, size: 4096, time: 1545 ms, np: 8
+LOG: prove: 4096 1545 ms
+LOG: verify: 4096 15 ms
+Profile PN Lookup: look size: 16384, query size: 4096
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 9 ms
+LOG: setup_rng: (QUICK) 160: 712768 ms
+LOG: -- setup pnlookup 744515 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 25 ms
+-------- fold prove --------
+LOG: -------- commit_m 19 ms
+LOG: -------- commit_a 17 ms
+LOG: -------- commit_qa 72 ms
+LOG: ---------- commit_b 17 ms
+LOG: ---------- compute q_b 36 ms
+LOG: ---------- commit_q_b and commit_p 28 ms
+LOG: ---------- compute b_gamma, t_gamma... 280 us
+LOG: ---------- compute h(X) 17 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 14 ms
+LOG: ---------- compute zk_qa0 DLOG 34 ms
+LOG: ------ fold prove cq 257 ms
+LOG: -- range proof step 1: build query table 12 ms
+LOG: -- range proof step 2: prove cq 1596 ms
+LOG: -- range proof step 3: build wit 9 ms
+LOG: -- range proof step 4: prove_qa_nizk 28 ms
+LOG: ------ range proof  1646 ms
+LOG: ------ compute q_o 13 ms
+LOG: ------ weighted kzg proof 102 ms
+REPORT_op: pn_lookup, size: 4096, time: 2047 ms, np: 8
+LOG: -- prove pnlookup 2047 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 16384, query_size: 4096
+LOG: -- generate random data 9 ms
+LOG: setup_rng: (QUICK) 160: 712549 ms
+LOG: -- set up keys 744309 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 24 ms
+-------- fold prove --------
+LOG: -------- commit_m 18 ms
+LOG: -------- commit_a 14 ms
+LOG: -------- commit_qa 62 ms
+LOG: ---------- commit_b 17 ms
+LOG: ---------- compute q_b 34 ms
+LOG: ---------- commit_q_b and commit_p 27 ms
+LOG: ---------- compute b_gamma, t_gamma... 430 us
+LOG: ---------- compute h(X) 16 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 13 ms
+LOG: ---------- compute zk_qa0 DLOG 31 ms
+LOG: ------ fold prove cq 239 ms
+LOG: -- range proof step 1: build query table 12 ms
+LOG: -- range proof step 2: prove cq 1862 ms
+LOG: -- range proof step 3: build wit 12 ms
+LOG: -- range proof step 4: prove_qa_nizk 47 ms
+LOG: ------ range proof  1934 ms
+LOG: ------ compute q_o 14 ms
+LOG: ------ weighted kzg proof 159 ms
+LOG: ---- pn_lookup proof 2372 ms
+LOG: ---- compute com_v 317 us
+LOG: ---- compute com_u 10 ms
+LOG: ---- compute q 83 ms
+LOG: ---- commit q 13 ms
+LOG: ---- commit u 28 ms
+LOG: ---- batch kzg 55 ms
+LOG: ---- dlog  15 ms
+REPORT_op: asset1, size: 4096, time: 2580 ms, np: 8
+LOG: -- prove work 2580 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 32768, query_size: 8192
+LOG: gen_kzg_key: 32768 902 ms
+LOG: preprocess: 32768 33138 ms
+REPORT_op: cq, size: 8192, time: 321 ms, np: 8
+LOG: prove_cq: 32768 321 ms
+LOG: slow_verify_cq 32768 15 ms
+LOG: fast_verify_cq32768 12 ms
+LOG: gen_rand_eles: 8192 1 ms
+LOG: setup_rng: (QUICK) 160: 734971 ms
+LOG: setup range proof keys: 8192 734998 ms
+LOG: produce two commits: 8192 98 ms
+LOG: -- range proof step 1: build query table 18 ms
+LOG: -- range proof step 2: prove cq 2684 ms
+LOG: -- range proof step 3: build wit 22 ms
+LOG: -- range proof step 4: prove_qa_nizk 95 ms
+REPORT_op: range, size: 8192, time: 2821 ms, np: 8
+LOG: prove: 8192 2821 ms
+LOG: verify: 8192 15 ms
+Profile PN Lookup: look size: 32768, query size: 8192
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 20 ms
+LOG: setup_rng: (QUICK) 160: 735366 ms
+LOG: -- setup pnlookup 802983 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 42 ms
+-------- fold prove --------
+LOG: -------- commit_m 33 ms
+LOG: -------- commit_a 28 ms
+LOG: -------- commit_qa 140 ms
+LOG: ---------- commit_b 29 ms
+LOG: ---------- compute q_b 59 ms
+LOG: ---------- commit_q_b and commit_p 48 ms
+LOG: ---------- compute b_gamma, t_gamma... 584 us
+LOG: ---------- compute h(X) 21 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 23 ms
+LOG: ---------- compute zk_qa0 DLOG 53 ms
+LOG: ------ fold prove cq 438 ms
+LOG: -- range proof step 1: build query table 21 ms
+LOG: -- range proof step 2: prove cq 2916 ms
+LOG: -- range proof step 3: build wit 18 ms
+LOG: -- range proof step 4: prove_qa_nizk 57 ms
+LOG: ------ range proof  3014 ms
+LOG: ------ compute q_o 20 ms
+LOG: ------ weighted kzg proof 159 ms
+REPORT_op: pn_lookup, size: 8192, time: 3676 ms, np: 8
+LOG: -- prove pnlookup 3676 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 32768, query_size: 8192
+LOG: -- generate random data 20 ms
+LOG: setup_rng: (QUICK) 160: 735378 ms
+LOG: -- set up keys 802870 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 38 ms
+-------- fold prove --------
+LOG: -------- commit_m 31 ms
+LOG: -------- commit_a 24 ms
+LOG: -------- commit_qa 113 ms
+LOG: ---------- commit_b 28 ms
+LOG: ---------- compute q_b 59 ms
+LOG: ---------- commit_q_b and commit_p 48 ms
+LOG: ---------- compute b_gamma, t_gamma... 462 us
+LOG: ---------- compute h(X) 23 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 23 ms
+LOG: ---------- compute zk_qa0 DLOG 49 ms
+LOG: ------ fold prove cq 402 ms
+LOG: -- range proof step 1: build query table 21 ms
+LOG: -- range proof step 2: prove cq 3358 ms
+LOG: -- range proof step 3: build wit 23 ms
+LOG: -- range proof step 4: prove_qa_nizk 97 ms
+LOG: ------ range proof  3501 ms
+LOG: ------ compute q_o 21 ms
+LOG: ------ weighted kzg proof 245 ms
+LOG: ---- pn_lookup proof 4211 ms
+LOG: ---- compute com_v 445 us
+LOG: ---- compute com_u 15 ms
+LOG: ---- compute q 113 ms
+LOG: ---- commit q 21 ms
+LOG: ---- commit u 43 ms
+LOG: ---- batch kzg 77 ms
+LOG: ---- dlog  25 ms
+REPORT_op: asset1, size: 8192, time: 4508 ms, np: 8
+LOG: -- prove work 4508 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 65536, query_size: 16384
+LOG: gen_kzg_key: 65536 1691 ms
+LOG: preprocess: 65536 70641 ms
+REPORT_op: cq, size: 16384, time: 530 ms, np: 8
+LOG: prove_cq: 65536 530 ms
+LOG: slow_verify_cq 65536 15 ms
+LOG: fast_verify_cq65536 12 ms
+LOG: gen_rand_eles: 16384 3 ms
+LOG: setup_rng: (QUICK) 160: 779080 ms
+LOG: setup range proof keys: 16384 779096 ms
+LOG: produce two commits: 16384 191 ms
+LOG: -- range proof step 1: build query table 36 ms
+LOG: -- range proof step 2: prove cq 5148 ms
+LOG: -- range proof step 3: build wit 43 ms
+LOG: -- range proof step 4: prove_qa_nizk 190 ms
+REPORT_op: range, size: 16384, time: 5420 ms, np: 8
+LOG: prove: 16384 5420 ms
+LOG: verify: 16384 15 ms
+Profile PN Lookup: look size: 65536, query size: 16384
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 42 ms
+LOG: setup_rng: (QUICK) 160: 778906 ms
+LOG: -- setup pnlookup 922753 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 81 ms
+-------- fold prove --------
+LOG: -------- commit_m 65 ms
+LOG: -------- commit_a 45 ms
+LOG: -------- commit_qa 263 ms
+LOG: ---------- commit_b 46 ms
+LOG: ---------- compute q_b 108 ms
+LOG: ---------- commit_q_b and commit_p 96 ms
+LOG: ---------- compute b_gamma, t_gamma... 628 us
+LOG: ---------- compute h(X) 32 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 34 ms
+LOG: ---------- compute zk_qa0 DLOG 77 ms
+LOG: ------ fold prove cq 773 ms
+LOG: -- range proof step 1: build query table 41 ms
+LOG: -- range proof step 2: prove cq 5607 ms
+LOG: -- range proof step 3: build wit 40 ms
+LOG: -- range proof step 4: prove_qa_nizk 114 ms
+LOG: ------ range proof  5805 ms
+LOG: ------ compute q_o 32 ms
+LOG: ------ weighted kzg proof 270 ms
+REPORT_op: pn_lookup, size: 16384, time: 6965 ms, np: 8
+LOG: -- prove pnlookup 6965 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 65536, query_size: 16384
+LOG: -- generate random data 42 ms
+LOG: setup_rng: (QUICK) 160: 779175 ms
+LOG: -- set up keys 923169 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 73 ms
+-------- fold prove --------
+LOG: -------- commit_m 61 ms
+LOG: -------- commit_a 38 ms
+LOG: -------- commit_qa 213 ms
+LOG: ---------- commit_b 45 ms
+LOG: ---------- compute q_b 107 ms
+LOG: ---------- commit_q_b and commit_p 96 ms
+LOG: ---------- compute b_gamma, t_gamma... 656 us
+LOG: ---------- compute h(X) 32 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 35 ms
+LOG: ---------- compute zk_qa0 DLOG 72 ms
+LOG: ------ fold prove cq 704 ms
+LOG: -- range proof step 1: build query table 50 ms
+LOG: -- range proof step 2: prove cq 6531 ms
+LOG: -- range proof step 3: build wit 42 ms
+LOG: -- range proof step 4: prove_qa_nizk 188 ms
+LOG: ------ range proof  6813 ms
+LOG: ------ compute q_o 32 ms
+LOG: ------ weighted kzg proof 448 ms
+LOG: ---- pn_lookup proof 8074 ms
+LOG: ---- compute com_v 571 us
+LOG: ---- compute com_u 27 ms
+LOG: ---- compute q 170 ms
+LOG: ---- commit q 41 ms
+LOG: ---- commit u 85 ms
+LOG: ---- batch kzg 134 ms
+LOG: ---- dlog  38 ms
+REPORT_op: asset1, size: 16384, time: 8572 ms, np: 8
+LOG: -- prove work 8572 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 8, lookup_size: 131072, query_size: 32768
+LOG: gen_kzg_key: 131072 3189 ms
+LOG: preprocess: 131072 149939 ms
+REPORT_op: cq, size: 32768, time: 1005 ms, np: 8
+LOG: prove_cq: 131072 1005 ms
+LOG: slow_verify_cq 131072 15 ms
+LOG: fast_verify_cq131072 12 ms
+LOG: gen_rand_eles: 32768 6 ms
+LOG: setup_rng: (QUICK) 160: 866009 ms
+LOG: setup range proof keys: 32768 866029 ms
+LOG: produce two commits: 32768 327 ms
+LOG: -- range proof step 1: build query table 110 ms
+LOG: -- range proof step 2: prove cq 10045 ms
+LOG: -- range proof step 3: build wit 87 ms
+LOG: -- range proof step 4: prove_qa_nizk 345 ms
+REPORT_op: range, size: 32768, time: 10590 ms, np: 8
+LOG: prove: 32768 10590 ms
+LOG: verify: 32768 15 ms
+Profile PN Lookup: look size: 131072, query size: 32768
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 88 ms
+LOG: setup_rng: (QUICK) 160: 866494 ms
+LOG: -- setup pnlookup 1170855 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 161 ms
+-------- fold prove --------
+LOG: -------- commit_m 131 ms
+LOG: -------- commit_a 90 ms
+LOG: -------- commit_qa 532 ms
+LOG: ---------- commit_b 90 ms
+LOG: ---------- compute q_b 205 ms
+LOG: ---------- commit_q_b and commit_p 166 ms
+LOG: ---------- compute b_gamma, t_gamma... 926 us
+LOG: ---------- compute h(X) 51 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 69 ms
+LOG: ---------- compute zk_qa0 DLOG 150 ms
+LOG: ------ fold prove cq 1490 ms
+LOG: -- range proof step 1: build query table 110 ms
+LOG: -- range proof step 2: prove cq 10928 ms
+LOG: -- range proof step 3: build wit 90 ms
+LOG: -- range proof step 4: prove_qa_nizk 190 ms
+LOG: ------ range proof  11321 ms
+LOG: ------ compute q_o 55 ms
+LOG: ------ weighted kzg proof 461 ms
+REPORT_op: pn_lookup, size: 32768, time: 13493 ms, np: 8
+LOG: -- prove pnlookup 13493 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 131072, query_size: 32768
+LOG: -- generate random data 87 ms
+LOG: setup_rng: (QUICK) 160: 864626 ms
+LOG: -- set up keys 1169056 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 143 ms
+-------- fold prove --------
+LOG: -------- commit_m 123 ms
+LOG: -------- commit_a 75 ms
+LOG: -------- commit_qa 434 ms
+LOG: ---------- commit_b 90 ms
+LOG: ---------- compute q_b 205 ms
+LOG: ---------- commit_q_b and commit_p 166 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 52 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 69 ms
+LOG: ---------- compute zk_qa0 DLOG 139 ms
+LOG: ------ fold prove cq 1359 ms
+LOG: -- range proof step 1: build query table 88 ms
+LOG: -- range proof step 2: prove cq 12633 ms
+LOG: -- range proof step 3: build wit 94 ms
+LOG: -- range proof step 4: prove_qa_nizk 341 ms
+LOG: ------ range proof  13159 ms
+LOG: ------ compute q_o 56 ms
+LOG: ------ weighted kzg proof 820 ms
+LOG: ---- pn_lookup proof 15543 ms
+LOG: ---- compute com_v 899 us
+LOG: ---- compute com_u 52 ms
+LOG: ---- compute q 284 ms
+LOG: ---- commit q 82 ms
+LOG: ---- commit u 169 ms
+LOG: ---- batch kzg 247 ms
+LOG: ---- dlog  74 ms
+REPORT_op: asset1, size: 32768, time: 16457 ms, np: 8
+LOG: -- prove work 16457 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 1024, query_size: 256
+LOG: gen_kzg_key: 1024 94 ms
+LOG: preprocess: 1024 1948 ms
+REPORT_op: cq, size: 256, time: 42 ms, np: 4
+LOG: prove_cq: 1024 42 ms
+LOG: slow_verify_cq 1024 15 ms
+LOG: fast_verify_cq1024 12 ms
+LOG: gen_rand_eles: 256 273 us
+LOG: setup_rng: (QUICK) 160: 692006 ms
+LOG: setup range proof keys: 256 692028 ms
+LOG: produce two commits: 256 7 ms
+LOG: -- range proof step 1: build query table 862 us
+LOG: -- range proof step 2: prove cq 356 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 5 ms
+REPORT_op: range, size: 256, time: 364 ms, np: 4
+LOG: prove: 256 364 ms
+LOG: verify: 256 15 ms
+Profile PN Lookup: look size: 1024, query size: 256
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 718 us
+LOG: setup_rng: (QUICK) 160: 692017 ms
+LOG: -- setup pnlookup 696061 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 6 ms
+-------- fold prove --------
+LOG: -------- commit_m 5 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 11 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 5 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 158 us
+LOG: ---------- compute h(X) 4 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 9 ms
+LOG: ------ fold prove cq 52 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 380 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 5 ms
+LOG: ------ range proof  388 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 26 ms
+REPORT_op: pn_lookup, size: 256, time: 477 ms, np: 4
+LOG: -- prove pnlookup 477 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 1024, query_size: 256
+LOG: -- generate random data 730 us
+LOG: setup_rng: (QUICK) 160: 692102 ms
+LOG: -- set up keys 696144 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 6 ms
+-------- fold prove --------
+LOG: -------- commit_m 4 ms
+LOG: -------- commit_a 3 ms
+LOG: -------- commit_qa 9 ms
+LOG: ---------- commit_b 3 ms
+LOG: ---------- compute q_b 5 ms
+LOG: ---------- commit_q_b and commit_p 6 ms
+LOG: ---------- compute b_gamma, t_gamma... 139 us
+LOG: ---------- compute h(X) 3 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 2 ms
+LOG: ---------- compute zk_qa0 DLOG 9 ms
+LOG: ------ fold prove cq 48 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 419 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 6 ms
+LOG: ------ range proof  428 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 35 ms
+LOG: ---- pn_lookup proof 522 ms
+LOG: ---- compute com_v 236 us
+LOG: ---- compute com_u 2 ms
+LOG: ---- compute q 8 ms
+LOG: ---- commit q 3 ms
+LOG: ---- commit u 6 ms
+LOG: ---- batch kzg 13 ms
+LOG: ---- dlog  4 ms
+REPORT_op: asset1, size: 256, time: 560 ms, np: 4
+LOG: -- prove work 560 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 2048, query_size: 512
+LOG: gen_kzg_key: 2048 157 ms
+LOG: preprocess: 2048 3528 ms
+REPORT_op: cq, size: 512, time: 64 ms, np: 4
+LOG: prove_cq: 2048 64 ms
+LOG: slow_verify_cq 2048 15 ms
+LOG: fast_verify_cq2048 12 ms
+LOG: gen_rand_eles: 512 361 us
+LOG: setup_rng: (QUICK) 160: 693272 ms
+LOG: setup range proof keys: 512 693292 ms
+LOG: produce two commits: 512 12 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 493 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 12 ms
+REPORT_op: range, size: 512, time: 509 ms, np: 4
+LOG: prove: 512 509 ms
+LOG: verify: 512 15 ms
+Profile PN Lookup: look size: 2048, query size: 512
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 693352 ms
+LOG: -- setup pnlookup 700645 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 10 ms
+-------- fold prove --------
+LOG: -------- commit_m 6 ms
+LOG: -------- commit_a 5 ms
+LOG: -------- commit_qa 20 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 7 ms
+LOG: ---------- commit_q_b and commit_p 10 ms
+LOG: ---------- compute b_gamma, t_gamma... 140 us
+LOG: ---------- compute h(X) 5 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 4 ms
+LOG: ---------- compute zk_qa0 DLOG 13 ms
+LOG: ------ fold prove cq 79 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 537 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 9 ms
+LOG: ------ range proof  550 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 34 ms
+REPORT_op: pn_lookup, size: 512, time: 679 ms, np: 4
+LOG: -- prove pnlookup 679 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 2048, query_size: 512
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 693470 ms
+LOG: -- set up keys 700760 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 10 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 4 ms
+LOG: -------- commit_qa 16 ms
+LOG: ---------- commit_b 5 ms
+LOG: ---------- compute q_b 7 ms
+LOG: ---------- commit_q_b and commit_p 10 ms
+LOG: ---------- compute b_gamma, t_gamma... 149 us
+LOG: ---------- compute h(X) 5 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 4 ms
+LOG: ---------- compute zk_qa0 DLOG 12 ms
+LOG: ------ fold prove cq 75 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 597 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 12 ms
+LOG: ------ range proof  614 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 50 ms
+LOG: ---- pn_lookup proof 754 ms
+LOG: ---- compute com_v 240 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 14 ms
+LOG: ---- commit q 4 ms
+LOG: ---- commit u 9 ms
+LOG: ---- batch kzg 17 ms
+LOG: ---- dlog  5 ms
+REPORT_op: asset1, size: 512, time: 811 ms, np: 4
+LOG: -- prove work 811 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 4096, query_size: 1024
+LOG: gen_kzg_key: 4096 277 ms
+LOG: preprocess: 4096 6828 ms
+REPORT_op: cq, size: 1024, time: 97 ms, np: 4
+LOG: prove_cq: 4096 97 ms
+LOG: slow_verify_cq 4096 15 ms
+LOG: fast_verify_cq4096 12 ms
+LOG: gen_rand_eles: 1024 582 us
+LOG: setup_rng: (QUICK) 160: 696019 ms
+LOG: setup range proof keys: 1024 696040 ms
+LOG: produce two commits: 1024 23 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 749 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 26 ms
+REPORT_op: range, size: 1024, time: 782 ms, np: 4
+LOG: prove: 1024 782 ms
+LOG: verify: 1024 15 ms
+Profile PN Lookup: look size: 4096, query size: 1024
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 2 ms
+LOG: setup_rng: (QUICK) 160: 696072 ms
+LOG: -- setup pnlookup 710085 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 14 ms
+-------- fold prove --------
+LOG: -------- commit_m 10 ms
+LOG: -------- commit_a 8 ms
+LOG: -------- commit_qa 37 ms
+LOG: ---------- commit_b 8 ms
+LOG: ---------- compute q_b 11 ms
+LOG: ---------- commit_q_b and commit_p 19 ms
+LOG: ---------- compute b_gamma, t_gamma... 165 us
+LOG: ---------- compute h(X) 6 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 18 ms
+LOG: ------ fold prove cq 128 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 825 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 16 ms
+LOG: ------ range proof  849 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 53 ms
+REPORT_op: pn_lookup, size: 1024, time: 1051 ms, np: 4
+LOG: -- prove pnlookup 1051 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 4096, query_size: 1024
+LOG: -- generate random data 2 ms
+LOG: setup_rng: (QUICK) 160: 696249 ms
+LOG: -- set up keys 710254 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 14 ms
+-------- fold prove --------
+LOG: -------- commit_m 10 ms
+LOG: -------- commit_a 7 ms
+LOG: -------- commit_qa 28 ms
+LOG: ---------- commit_b 8 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 19 ms
+LOG: ---------- compute b_gamma, t_gamma... 177 us
+LOG: ---------- compute h(X) 6 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 7 ms
+LOG: ---------- compute zk_qa0 DLOG 17 ms
+LOG: ------ fold prove cq 116 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 934 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 25 ms
+LOG: ------ range proof  966 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 84 ms
+LOG: ---- pn_lookup proof 1188 ms
+LOG: ---- compute com_v 251 us
+LOG: ---- compute com_u 5 ms
+LOG: ---- compute q 32 ms
+LOG: ---- commit q 8 ms
+LOG: ---- commit u 17 ms
+LOG: ---- batch kzg 27 ms
+LOG: ---- dlog  8 ms
+REPORT_op: asset1, size: 1024, time: 1288 ms, np: 4
+LOG: -- prove work 1288 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 8192, query_size: 2048
+LOG: gen_kzg_key: 8192 502 ms
+LOG: preprocess: 8192 14449 ms
+REPORT_op: cq, size: 2048, time: 164 ms, np: 4
+LOG: prove_cq: 8192 164 ms
+LOG: slow_verify_cq 8192 15 ms
+LOG: fast_verify_cq8192 12 ms
+LOG: gen_rand_eles: 2048 969 us
+LOG: setup_rng: (QUICK) 160: 702013 ms
+LOG: setup range proof keys: 2048 702039 ms
+LOG: produce two commits: 2048 53 ms
+LOG: -- range proof step 1: build query table 6 ms
+LOG: -- range proof step 2: prove cq 1267 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 45 ms
+REPORT_op: range, size: 2048, time: 1325 ms, np: 4
+LOG: prove: 2048 1325 ms
+LOG: verify: 2048 15 ms
+Profile PN Lookup: look size: 8192, query size: 2048
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 5 ms
+LOG: setup_rng: (QUICK) 160: 702108 ms
+LOG: -- setup pnlookup 731686 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 28 ms
+-------- fold prove --------
+LOG: -------- commit_m 19 ms
+LOG: -------- commit_a 16 ms
+LOG: -------- commit_qa 73 ms
+LOG: ---------- commit_b 16 ms
+LOG: ---------- compute q_b 18 ms
+LOG: ---------- commit_q_b and commit_p 31 ms
+LOG: ---------- compute b_gamma, t_gamma... 194 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 13 ms
+LOG: ---------- compute zk_qa0 DLOG 30 ms
+LOG: ------ fold prove cq 229 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 1397 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 32 ms
+LOG: ------ range proof  1443 ms
+LOG: ------ compute q_o 8 ms
+LOG: ------ weighted kzg proof 82 ms
+REPORT_op: pn_lookup, size: 2048, time: 1793 ms, np: 4
+LOG: -- prove pnlookup 1793 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 8192, query_size: 2048
+LOG: -- generate random data 5 ms
+LOG: setup_rng: (QUICK) 160: 702737 ms
+LOG: -- set up keys 732302 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 27 ms
+-------- fold prove --------
+LOG: -------- commit_m 18 ms
+LOG: -------- commit_a 13 ms
+LOG: -------- commit_qa 60 ms
+LOG: ---------- commit_b 16 ms
+LOG: ---------- compute q_b 19 ms
+LOG: ---------- commit_q_b and commit_p 31 ms
+LOG: ---------- compute b_gamma, t_gamma... 196 us
+LOG: ---------- compute h(X) 9 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 13 ms
+LOG: ---------- compute zk_qa0 DLOG 29 ms
+LOG: ------ fold prove cq 211 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 1636 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 46 ms
+LOG: ------ range proof  1696 ms
+LOG: ------ compute q_o 8 ms
+LOG: ------ weighted kzg proof 139 ms
+LOG: ---- pn_lookup proof 2083 ms
+LOG: ---- compute com_v 284 us
+LOG: ---- compute com_u 10 ms
+LOG: ---- compute q 45 ms
+LOG: ---- commit q 15 ms
+LOG: ---- commit u 31 ms
+LOG: ---- batch kzg 45 ms
+LOG: ---- dlog  14 ms
+REPORT_op: asset1, size: 2048, time: 2247 ms, np: 4
+LOG: -- prove work 2247 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 16384, query_size: 4096
+LOG: gen_kzg_key: 16384 927 ms
+LOG: preprocess: 16384 30996 ms
+REPORT_op: cq, size: 4096, time: 285 ms, np: 4
+LOG: prove_cq: 16384 285 ms
+LOG: slow_verify_cq 16384 15 ms
+LOG: fast_verify_cq16384 12 ms
+LOG: gen_rand_eles: 4096 1 ms
+LOG: setup_rng: (QUICK) 160: 712985 ms
+LOG: setup range proof keys: 4096 713001 ms
+LOG: produce two commits: 4096 63 ms
+LOG: -- range proof step 1: build query table 15 ms
+LOG: -- range proof step 2: prove cq 2183 ms
+LOG: -- range proof step 3: build wit 13 ms
+LOG: -- range proof step 4: prove_qa_nizk 62 ms
+REPORT_op: range, size: 4096, time: 2275 ms, np: 4
+LOG: prove: 4096 2275 ms
+LOG: verify: 4096 15 ms
+Profile PN Lookup: look size: 16384, query size: 4096
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 11 ms
+LOG: setup_rng: (QUICK) 160: 713535 ms
+LOG: -- setup pnlookup 776794 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 45 ms
+-------- fold prove --------
+LOG: -------- commit_m 33 ms
+LOG: -------- commit_a 29 ms
+LOG: -------- commit_qa 140 ms
+LOG: ---------- commit_b 29 ms
+LOG: ---------- compute q_b 32 ms
+LOG: ---------- commit_q_b and commit_p 51 ms
+LOG: ---------- compute b_gamma, t_gamma... 243 us
+LOG: ---------- compute h(X) 12 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 23 ms
+LOG: ---------- compute zk_qa0 DLOG 53 ms
+LOG: ------ fold prove cq 406 ms
+LOG: -- range proof step 1: build query table 14 ms
+LOG: -- range proof step 2: prove cq 2395 ms
+LOG: -- range proof step 3: build wit 13 ms
+LOG: -- range proof step 4: prove_qa_nizk 46 ms
+LOG: ------ range proof  2469 ms
+LOG: ------ compute q_o 13 ms
+LOG: ------ weighted kzg proof 123 ms
+REPORT_op: pn_lookup, size: 4096, time: 3059 ms, np: 4
+LOG: -- prove pnlookup 3059 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 16384, query_size: 4096
+LOG: -- generate random data 11 ms
+LOG: setup_rng: (QUICK) 160: 713179 ms
+LOG: -- set up keys 776476 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 44 ms
+-------- fold prove --------
+LOG: -------- commit_m 32 ms
+LOG: -------- commit_a 25 ms
+LOG: -------- commit_qa 119 ms
+LOG: ---------- commit_b 29 ms
+LOG: ---------- compute q_b 31 ms
+LOG: ---------- commit_q_b and commit_p 51 ms
+LOG: ---------- compute b_gamma, t_gamma... 333 us
+LOG: ---------- compute h(X) 12 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 24 ms
+LOG: ---------- compute zk_qa0 DLOG 49 ms
+LOG: ------ fold prove cq 376 ms
+LOG: -- range proof step 1: build query table 13 ms
+LOG: -- range proof step 2: prove cq 2742 ms
+LOG: -- range proof step 3: build wit 16 ms
+LOG: -- range proof step 4: prove_qa_nizk 55 ms
+LOG: ------ range proof  2829 ms
+LOG: ------ compute q_o 13 ms
+LOG: ------ weighted kzg proof 220 ms
+LOG: ---- pn_lookup proof 3484 ms
+LOG: ---- compute com_v 315 us
+LOG: ---- compute com_u 15 ms
+LOG: ---- compute q 67 ms
+LOG: ---- commit q 24 ms
+LOG: ---- commit u 48 ms
+LOG: ---- batch kzg 68 ms
+LOG: ---- dlog  25 ms
+REPORT_op: asset1, size: 4096, time: 3734 ms, np: 4
+LOG: -- prove work 3734 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 32768, query_size: 8192
+LOG: gen_kzg_key: 32768 1720 ms
+LOG: preprocess: 32768 66114 ms
+REPORT_op: cq, size: 8192, time: 489 ms, np: 4
+LOG: prove_cq: 32768 489 ms
+LOG: slow_verify_cq 32768 15 ms
+LOG: fast_verify_cq32768 12 ms
+LOG: gen_rand_eles: 8192 3 ms
+LOG: setup_rng: (QUICK) 160: 734891 ms
+LOG: setup range proof keys: 8192 734907 ms
+LOG: produce two commits: 8192 128 ms
+LOG: -- range proof step 1: build query table 28 ms
+LOG: -- range proof step 2: prove cq 3882 ms
+LOG: -- range proof step 3: build wit 25 ms
+LOG: -- range proof step 4: prove_qa_nizk 111 ms
+REPORT_op: range, size: 8192, time: 4048 ms, np: 4
+LOG: prove: 8192 4048 ms
+LOG: verify: 8192 15 ms
+Profile PN Lookup: look size: 32768, query size: 8192
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 23 ms
+LOG: setup_rng: (QUICK) 160: 734670 ms
+LOG: -- setup pnlookup 869380 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 75 ms
+-------- fold prove --------
+LOG: -------- commit_m 56 ms
+LOG: -------- commit_a 50 ms
+LOG: -------- commit_qa 273 ms
+LOG: ---------- commit_b 50 ms
+LOG: ---------- compute q_b 56 ms
+LOG: ---------- commit_q_b and commit_p 95 ms
+LOG: ---------- compute b_gamma, t_gamma... 358 us
+LOG: ---------- compute h(X) 19 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 40 ms
+LOG: ---------- compute zk_qa0 DLOG 86 ms
+LOG: ------ fold prove cq 730 ms
+LOG: -- range proof step 1: build query table 26 ms
+LOG: -- range proof step 2: prove cq 4293 ms
+LOG: -- range proof step 3: build wit 24 ms
+LOG: -- range proof step 4: prove_qa_nizk 72 ms
+LOG: ------ range proof  4417 ms
+LOG: ------ compute q_o 22 ms
+LOG: ------ weighted kzg proof 204 ms
+REPORT_op: pn_lookup, size: 8192, time: 5450 ms, np: 4
+LOG: -- prove pnlookup 5450 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 32768, query_size: 8192
+LOG: -- generate random data 23 ms
+LOG: setup_rng: (QUICK) 160: 735310 ms
+LOG: -- set up keys 869982 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 73 ms
+-------- fold prove --------
+LOG: -------- commit_m 54 ms
+LOG: -------- commit_a 42 ms
+LOG: -------- commit_qa 219 ms
+LOG: ---------- commit_b 50 ms
+LOG: ---------- compute q_b 56 ms
+LOG: ---------- commit_q_b and commit_p 95 ms
+LOG: ---------- compute b_gamma, t_gamma... 341 us
+LOG: ---------- compute h(X) 19 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 40 ms
+LOG: ---------- compute zk_qa0 DLOG 79 ms
+LOG: ------ fold prove cq 658 ms
+LOG: -- range proof step 1: build query table 25 ms
+LOG: -- range proof step 2: prove cq 4968 ms
+LOG: -- range proof step 3: build wit 27 ms
+LOG: -- range proof step 4: prove_qa_nizk 102 ms
+LOG: ------ range proof  5124 ms
+LOG: ------ compute q_o 22 ms
+LOG: ------ weighted kzg proof 388 ms
+LOG: ---- pn_lookup proof 6269 ms
+LOG: ---- compute com_v 404 us
+LOG: ---- compute com_u 26 ms
+LOG: ---- compute q 108 ms
+LOG: ---- commit q 41 ms
+LOG: ---- commit u 84 ms
+LOG: ---- batch kzg 112 ms
+LOG: ---- dlog  42 ms
+REPORT_op: asset1, size: 8192, time: 6685 ms, np: 4
+LOG: -- prove work 6685 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 65536, query_size: 16384
+LOG: gen_kzg_key: 65536 3265 ms
+LOG: preprocess: 65536 140980 ms
+REPORT_op: cq, size: 16384, time: 862 ms, np: 4
+LOG: prove_cq: 65536 862 ms
+LOG: slow_verify_cq 65536 15 ms
+LOG: fast_verify_cq65536 12 ms
+LOG: gen_rand_eles: 16384 6 ms
+LOG: setup_rng: (QUICK) 160: 778380 ms
+LOG: setup range proof keys: 16384 778395 ms
+LOG: produce two commits: 16384 266 ms
+LOG: -- range proof step 1: build query table 59 ms
+LOG: -- range proof step 2: prove cq 7426 ms
+LOG: -- range proof step 3: build wit 48 ms
+LOG: -- range proof step 4: prove_qa_nizk 206 ms
+REPORT_op: range, size: 16384, time: 7741 ms, np: 4
+LOG: prove: 16384 7741 ms
+LOG: verify: 16384 15 ms
+Profile PN Lookup: look size: 65536, query size: 16384
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 49 ms
+LOG: setup_rng: (QUICK) 160: 778254 ms
+LOG: -- setup pnlookup 1065242 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 149 ms
+-------- fold prove --------
+LOG: -------- commit_m 109 ms
+LOG: -------- commit_a 90 ms
+LOG: -------- commit_qa 522 ms
+LOG: ---------- commit_b 90 ms
+LOG: ---------- compute q_b 106 ms
+LOG: ---------- commit_q_b and commit_p 172 ms
+LOG: ---------- compute b_gamma, t_gamma... 547 us
+LOG: ---------- compute h(X) 31 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 69 ms
+LOG: ---------- compute zk_qa0 DLOG 146 ms
+LOG: ------ fold prove cq 1339 ms
+LOG: -- range proof step 1: build query table 54 ms
+LOG: -- range proof step 2: prove cq 8250 ms
+LOG: -- range proof step 3: build wit 48 ms
+LOG: -- range proof step 4: prove_qa_nizk 138 ms
+LOG: ------ range proof  8493 ms
+LOG: ------ compute q_o 40 ms
+LOG: ------ weighted kzg proof 384 ms
+REPORT_op: pn_lookup, size: 16384, time: 10409 ms, np: 4
+LOG: -- prove pnlookup 10409 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 65536, query_size: 16384
+LOG: -- generate random data 48 ms
+LOG: setup_rng: (QUICK) 160: 779063 ms
+LOG: -- set up keys 1066066 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 141 ms
+-------- fold prove --------
+LOG: -------- commit_m 106 ms
+LOG: -------- commit_a 75 ms
+LOG: -------- commit_qa 423 ms
+LOG: ---------- commit_b 89 ms
+LOG: ---------- compute q_b 106 ms
+LOG: ---------- commit_q_b and commit_p 172 ms
+LOG: ---------- compute b_gamma, t_gamma... 623 us
+LOG: ---------- compute h(X) 32 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 69 ms
+LOG: ---------- compute zk_qa0 DLOG 135 ms
+LOG: ------ fold prove cq 1211 ms
+LOG: -- range proof step 1: build query table 51 ms
+LOG: -- range proof step 2: prove cq 9682 ms
+LOG: -- range proof step 3: build wit 54 ms
+LOG: -- range proof step 4: prove_qa_nizk 222 ms
+LOG: ------ range proof  10012 ms
+LOG: ------ compute q_o 41 ms
+LOG: ------ weighted kzg proof 730 ms
+LOG: ---- pn_lookup proof 12140 ms
+LOG: ---- compute com_v 562 us
+LOG: ---- compute com_u 50 ms
+LOG: ---- compute q 193 ms
+LOG: ---- commit q 82 ms
+LOG: ---- commit u 166 ms
+LOG: ---- batch kzg 216 ms
+LOG: ---- dlog  72 ms
+REPORT_op: asset1, size: 16384, time: 12922 ms, np: 4
+LOG: -- prove work 12922 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 4, lookup_size: 131072, query_size: 32768
+LOG: gen_kzg_key: 131072 6182 ms
+LOG: preprocess: 131072 298690 ms
+REPORT_op: cq, size: 32768, time: 1647 ms, np: 4
+LOG: prove_cq: 131072 1647 ms
+LOG: slow_verify_cq 131072 15 ms
+LOG: fast_verify_cq131072 12 ms
+LOG: gen_rand_eles: 32768 11 ms
+LOG: setup_rng: (QUICK) 160: 866068 ms
+LOG: setup range proof keys: 32768 866086 ms
+LOG: produce two commits: 32768 494 ms
+LOG: -- range proof step 1: build query table 131 ms
+LOG: -- range proof step 2: prove cq 14395 ms
+LOG: -- range proof step 3: build wit 122 ms
+LOG: -- range proof step 4: prove_qa_nizk 358 ms
+REPORT_op: range, size: 32768, time: 15008 ms, np: 4
+LOG: prove: 32768 15008 ms
+LOG: verify: 32768 15 ms
+Profile PN Lookup: look size: 131072, query size: 32768
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 101 ms
+LOG: setup_rng: (QUICK) 160: 865552 ms
+LOG: -- setup pnlookup 1472229 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 298 ms
+-------- fold prove --------
+LOG: -------- commit_m 198 ms
+LOG: -------- commit_a 179 ms
+LOG: -------- commit_qa 1058 ms
+LOG: ---------- commit_b 179 ms
+LOG: ---------- compute q_b 210 ms
+LOG: ---------- commit_q_b and commit_p 276 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 57 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 138 ms
+LOG: ---------- compute zk_qa0 DLOG 288 ms
+LOG: ------ fold prove cq 2589 ms
+LOG: -- range proof step 1: build query table 111 ms
+LOG: -- range proof step 2: prove cq 16072 ms
+LOG: -- range proof step 3: build wit 102 ms
+LOG: -- range proof step 4: prove_qa_nizk 236 ms
+LOG: ------ range proof  16523 ms
+LOG: ------ compute q_o 76 ms
+LOG: ------ weighted kzg proof 669 ms
+REPORT_op: pn_lookup, size: 32768, time: 20160 ms, np: 4
+LOG: -- prove pnlookup 20160 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 31 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 131072, query_size: 32768
+LOG: -- generate random data 101 ms
+LOG: setup_rng: (QUICK) 160: 866133 ms
+LOG: -- set up keys 1472827 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 281 ms
+-------- fold prove --------
+LOG: -------- commit_m 214 ms
+LOG: -------- commit_a 149 ms
+LOG: -------- commit_qa 866 ms
+LOG: ---------- commit_b 180 ms
+LOG: ---------- compute q_b 210 ms
+LOG: ---------- commit_q_b and commit_p 276 ms
+LOG: ---------- compute b_gamma, t_gamma... 987 us
+LOG: ---------- compute h(X) 57 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 138 ms
+LOG: ---------- compute zk_qa0 DLOG 266 ms
+LOG: ------ fold prove cq 2363 ms
+LOG: -- range proof step 1: build query table 115 ms
+LOG: -- range proof step 2: prove cq 18656 ms
+LOG: -- range proof step 3: build wit 104 ms
+LOG: -- range proof step 4: prove_qa_nizk 351 ms
+LOG: ------ range proof  19229 ms
+LOG: ------ compute q_o 79 ms
+LOG: ------ weighted kzg proof 1270 ms
+LOG: ---- pn_lookup proof 23230 ms
+LOG: ---- compute com_v 902 us
+LOG: ---- compute com_u 98 ms
+LOG: ---- compute q 355 ms
+LOG: ---- commit q 137 ms
+LOG: ---- commit u 281 ms
+LOG: ---- batch kzg 367 ms
+LOG: ---- dlog  144 ms
+REPORT_op: asset1, size: 32768, time: 24616 ms, np: 4
+LOG: -- prove work 24616 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 45 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 1024, query_size: 256
+LOG: gen_kzg_key: 1024 172 ms
+LOG: preprocess: 1024 3093 ms
+REPORT_op: cq, size: 256, time: 63 ms, np: 2
+LOG: prove_cq: 1024 63 ms
+LOG: slow_verify_cq 1024 15 ms
+LOG: fast_verify_cq1024 12 ms
+LOG: gen_rand_eles: 256 311 us
+LOG: setup_rng: (QUICK) 160: 692124 ms
+LOG: setup range proof keys: 256 692146 ms
+LOG: produce two commits: 256 12 ms
+LOG: -- range proof step 1: build query table 918 us
+LOG: -- range proof step 2: prove cq 596 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 10 ms
+REPORT_op: range, size: 256, time: 609 ms, np: 2
+LOG: prove: 256 609 ms
+LOG: verify: 256 16 ms
+Profile PN Lookup: look size: 1024, query size: 256
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 930 us
+LOG: setup_rng: (QUICK) 160: 691973 ms
+LOG: -- setup pnlookup 698414 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 11 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 6 ms
+LOG: -------- commit_qa 21 ms
+LOG: ---------- commit_b 6 ms
+LOG: ---------- compute q_b 3 ms
+LOG: ---------- commit_q_b and commit_p 12 ms
+LOG: ---------- compute b_gamma, t_gamma... 102 us
+LOG: ---------- compute h(X) 2 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 5 ms
+LOG: ---------- compute zk_qa0 DLOG 13 ms
+LOG: ------ fold prove cq 79 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 641 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 10 ms
+LOG: ------ range proof  653 ms
+LOG: ------ compute q_o 2 ms
+LOG: ------ weighted kzg proof 30 ms
+REPORT_op: pn_lookup, size: 256, time: 778 ms, np: 2
+LOG: -- prove pnlookup 778 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 1024, query_size: 256
+LOG: -- generate random data 920 us
+LOG: setup_rng: (QUICK) 160: 692253 ms
+LOG: -- set up keys 698690 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 11 ms
+-------- fold prove --------
+LOG: -------- commit_m 7 ms
+LOG: -------- commit_a 5 ms
+LOG: -------- commit_qa 16 ms
+LOG: ---------- commit_b 6 ms
+LOG: ---------- compute q_b 3 ms
+LOG: ---------- commit_q_b and commit_p 13 ms
+LOG: ---------- compute b_gamma, t_gamma... 112 us
+LOG: ---------- compute h(X) 2 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 5 ms
+LOG: ---------- compute zk_qa0 DLOG 13 ms
+LOG: ------ fold prove cq 73 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 709 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 10 ms
+LOG: ------ range proof  722 ms
+LOG: ------ compute q_o 2 ms
+LOG: ------ weighted kzg proof 49 ms
+LOG: ---- pn_lookup proof 859 ms
+LOG: ---- compute com_v 244 us
+LOG: ---- compute com_u 3 ms
+LOG: ---- compute q 6 ms
+LOG: ---- commit q 6 ms
+LOG: ---- commit u 13 ms
+LOG: ---- batch kzg 17 ms
+LOG: ---- dlog  6 ms
+REPORT_op: asset1, size: 256, time: 912 ms, np: 2
+LOG: -- prove work 912 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 2048, query_size: 512
+LOG: gen_kzg_key: 2048 299 ms
+LOG: preprocess: 2048 6299 ms
+REPORT_op: cq, size: 512, time: 103 ms, np: 2
+LOG: prove_cq: 2048 103 ms
+LOG: slow_verify_cq 2048 15 ms
+LOG: fast_verify_cq2048 12 ms
+LOG: gen_rand_eles: 512 532 us
+LOG: setup_rng: (QUICK) 160: 693456 ms
+LOG: setup range proof keys: 512 693478 ms
+LOG: produce two commits: 512 22 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 831 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 20 ms
+REPORT_op: range, size: 512, time: 855 ms, np: 2
+LOG: prove: 512 855 ms
+LOG: verify: 512 16 ms
+Profile PN Lookup: look size: 2048, query size: 512
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 1 ms
+LOG: setup_rng: (QUICK) 160: 693330 ms
+LOG: -- setup pnlookup 706319 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 18 ms
+-------- fold prove --------
+LOG: -------- commit_m 12 ms
+LOG: -------- commit_a 10 ms
+LOG: -------- commit_qa 38 ms
+LOG: ---------- commit_b 10 ms
+LOG: ---------- compute q_b 5 ms
+LOG: ---------- commit_q_b and commit_p 20 ms
+LOG: ---------- compute b_gamma, t_gamma... 123 us
+LOG: ---------- compute h(X) 3 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 9 ms
+LOG: ---------- compute zk_qa0 DLOG 21 ms
+LOG: ------ fold prove cq 133 ms
+LOG: -- range proof step 1: build query table 2 ms
+LOG: -- range proof step 2: prove cq 911 ms
+LOG: -- range proof step 3: build wit 1 ms
+LOG: -- range proof step 4: prove_qa_nizk 17 ms
+LOG: ------ range proof  933 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 42 ms
+REPORT_op: pn_lookup, size: 512, time: 1131 ms, np: 2
+LOG: -- prove pnlookup 1131 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 2048, query_size: 512
+LOG: -- generate random data 1 ms
+LOG: setup_rng: (QUICK) 160: 693639 ms
+LOG: -- set up keys 706636 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 18 ms
+-------- fold prove --------
+LOG: -------- commit_m 12 ms
+LOG: -------- commit_a 9 ms
+LOG: -------- commit_qa 31 ms
+LOG: ---------- commit_b 10 ms
+LOG: ---------- compute q_b 5 ms
+LOG: ---------- commit_q_b and commit_p 20 ms
+LOG: ---------- compute b_gamma, t_gamma... 124 us
+LOG: ---------- compute h(X) 3 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 9 ms
+LOG: ---------- compute zk_qa0 DLOG 20 ms
+LOG: ------ fold prove cq 123 ms
+LOG: -- range proof step 1: build query table 1 ms
+LOG: -- range proof step 2: prove cq 1017 ms
+LOG: -- range proof step 3: build wit 2 ms
+LOG: -- range proof step 4: prove_qa_nizk 19 ms
+LOG: ------ range proof  1041 ms
+LOG: ------ compute q_o 3 ms
+LOG: ------ weighted kzg proof 75 ms
+LOG: ---- pn_lookup proof 1262 ms
+LOG: ---- compute com_v 239 us
+LOG: ---- compute com_u 6 ms
+LOG: ---- compute q 12 ms
+LOG: ---- commit q 9 ms
+LOG: ---- commit u 18 ms
+LOG: ---- batch kzg 23 ms
+LOG: ---- dlog  10 ms
+REPORT_op: asset1, size: 512, time: 1343 ms, np: 2
+LOG: -- prove work 1343 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 4096, query_size: 1024
+LOG: gen_kzg_key: 4096 538 ms
+LOG: preprocess: 4096 13360 ms
+REPORT_op: cq, size: 1024, time: 161 ms, np: 2
+LOG: prove_cq: 4096 161 ms
+LOG: slow_verify_cq 4096 15 ms
+LOG: fast_verify_cq4096 12 ms
+LOG: gen_rand_eles: 1024 944 us
+LOG: setup_rng: (QUICK) 160: 696139 ms
+LOG: setup range proof keys: 1024 696161 ms
+LOG: produce two commits: 1024 41 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 1279 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 35 ms
+REPORT_op: range, size: 1024, time: 1321 ms, np: 2
+LOG: prove: 1024 1321 ms
+LOG: verify: 1024 16 ms
+Profile PN Lookup: look size: 4096, query size: 1024
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 3 ms
+LOG: setup_rng: (QUICK) 160: 696107 ms
+LOG: -- setup pnlookup 723566 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 27 ms
+-------- fold prove --------
+LOG: -------- commit_m 18 ms
+LOG: -------- commit_a 16 ms
+LOG: -------- commit_qa 72 ms
+LOG: ---------- commit_b 16 ms
+LOG: ---------- compute q_b 9 ms
+LOG: ---------- commit_q_b and commit_p 36 ms
+LOG: ---------- compute b_gamma, t_gamma... 175 us
+LOG: ---------- compute h(X) 5 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 13 ms
+LOG: ---------- compute zk_qa0 DLOG 31 ms
+LOG: ------ fold prove cq 221 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 1417 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 32 ms
+LOG: ------ range proof  1457 ms
+LOG: ------ compute q_o 5 ms
+LOG: ------ weighted kzg proof 73 ms
+REPORT_op: pn_lookup, size: 1024, time: 1785 ms, np: 2
+LOG: -- prove pnlookup 1785 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 4096, query_size: 1024
+LOG: -- generate random data 3 ms
+LOG: setup_rng: (QUICK) 160: 696343 ms
+LOG: -- set up keys 723796 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 27 ms
+-------- fold prove --------
+LOG: -------- commit_m 18 ms
+LOG: -------- commit_a 13 ms
+LOG: -------- commit_qa 55 ms
+LOG: ---------- commit_b 16 ms
+LOG: ---------- compute q_b 10 ms
+LOG: ---------- commit_q_b and commit_p 37 ms
+LOG: ---------- compute b_gamma, t_gamma... 192 us
+LOG: ---------- compute h(X) 5 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 13 ms
+LOG: ---------- compute zk_qa0 DLOG 29 ms
+LOG: ------ fold prove cq 201 ms
+LOG: -- range proof step 1: build query table 3 ms
+LOG: -- range proof step 2: prove cq 1635 ms
+LOG: -- range proof step 3: build wit 3 ms
+LOG: -- range proof step 4: prove_qa_nizk 35 ms
+LOG: ------ range proof  1678 ms
+LOG: ------ compute q_o 6 ms
+LOG: ------ weighted kzg proof 132 ms
+LOG: ---- pn_lookup proof 2046 ms
+LOG: ---- compute com_v 260 us
+LOG: ---- compute com_u 9 ms
+LOG: ---- compute q 29 ms
+LOG: ---- commit q 16 ms
+LOG: ---- commit u 32 ms
+LOG: ---- batch kzg 41 ms
+LOG: ---- dlog  15 ms
+REPORT_op: asset1, size: 1024, time: 2190 ms, np: 2
+LOG: -- prove work 2190 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 8192, query_size: 2048
+LOG: gen_kzg_key: 8192 983 ms
+LOG: preprocess: 8192 28764 ms
+REPORT_op: cq, size: 2048, time: 277 ms, np: 2
+LOG: prove_cq: 8192 277 ms
+LOG: slow_verify_cq 8192 15 ms
+LOG: fast_verify_cq8192 12 ms
+LOG: gen_rand_eles: 2048 1 ms
+LOG: setup_rng: (QUICK) 160: 701465 ms
+LOG: setup range proof keys: 2048 701484 ms
+LOG: produce two commits: 2048 72 ms
+LOG: -- range proof step 1: build query table 8 ms
+LOG: -- range proof step 2: prove cq 2150 ms
+LOG: -- range proof step 3: build wit 7 ms
+LOG: -- range proof step 4: prove_qa_nizk 67 ms
+REPORT_op: range, size: 2048, time: 2233 ms, np: 2
+LOG: prove: 2048 2233 ms
+LOG: verify: 2048 16 ms
+Profile PN Lookup: look size: 8192, query size: 2048
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 7 ms
+LOG: setup_rng: (QUICK) 160: 701501 ms
+LOG: -- setup pnlookup 760435 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 48 ms
+-------- fold prove --------
+LOG: -------- commit_m 33 ms
+LOG: -------- commit_a 30 ms
+LOG: -------- commit_qa 144 ms
+LOG: ---------- commit_b 30 ms
+LOG: ---------- compute q_b 16 ms
+LOG: ---------- commit_q_b and commit_p 58 ms
+LOG: ---------- compute b_gamma, t_gamma... 216 us
+LOG: ---------- compute h(X) 7 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 24 ms
+LOG: ---------- compute zk_qa0 DLOG 54 ms
+LOG: ------ fold prove cq 400 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 2387 ms
+LOG: -- range proof step 3: build wit 7 ms
+LOG: -- range proof step 4: prove_qa_nizk 59 ms
+LOG: ------ range proof  2462 ms
+LOG: ------ compute q_o 9 ms
+LOG: ------ weighted kzg proof 119 ms
+REPORT_op: pn_lookup, size: 2048, time: 3040 ms, np: 2
+LOG: -- prove pnlookup 3040 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 8192, query_size: 2048
+LOG: -- generate random data 7 ms
+LOG: setup_rng: (QUICK) 160: 701678 ms
+LOG: -- set up keys 760581 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 47 ms
+-------- fold prove --------
+LOG: -------- commit_m 32 ms
+LOG: -------- commit_a 25 ms
+LOG: -------- commit_qa 117 ms
+LOG: ---------- commit_b 30 ms
+LOG: ---------- compute q_b 16 ms
+LOG: ---------- commit_q_b and commit_p 58 ms
+LOG: ---------- compute b_gamma, t_gamma... 213 us
+LOG: ---------- compute h(X) 7 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 24 ms
+LOG: ---------- compute zk_qa0 DLOG 50 ms
+LOG: ------ fold prove cq 364 ms
+LOG: -- range proof step 1: build query table 7 ms
+LOG: -- range proof step 2: prove cq 2783 ms
+LOG: -- range proof step 3: build wit 6 ms
+LOG: -- range proof step 4: prove_qa_nizk 66 ms
+LOG: ------ range proof  2864 ms
+LOG: ------ compute q_o 10 ms
+LOG: ------ weighted kzg proof 223 ms
+LOG: ---- pn_lookup proof 3511 ms
+LOG: ---- compute com_v 280 us
+LOG: ---- compute com_u 16 ms
+LOG: ---- compute q 43 ms
+LOG: ---- commit q 28 ms
+LOG: ---- commit u 58 ms
+LOG: ---- batch kzg 70 ms
+LOG: ---- dlog  26 ms
+REPORT_op: asset1, size: 2048, time: 3755 ms, np: 2
+LOG: -- prove work 3755 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 16384, query_size: 4096
+LOG: gen_kzg_key: 16384 1816 ms
+LOG: preprocess: 16384 61805 ms
+REPORT_op: cq, size: 4096, time: 483 ms, np: 2
+LOG: prove_cq: 16384 483 ms
+LOG: slow_verify_cq 16384 15 ms
+LOG: fast_verify_cq16384 12 ms
+LOG: gen_rand_eles: 4096 3 ms
+LOG: setup_rng: (QUICK) 160: 712288 ms
+LOG: setup range proof keys: 4096 712311 ms
+LOG: produce two commits: 4096 101 ms
+LOG: -- range proof step 1: build query table 15 ms
+LOG: -- range proof step 2: prove cq 3719 ms
+LOG: -- range proof step 3: build wit 15 ms
+LOG: -- range proof step 4: prove_qa_nizk 88 ms
+REPORT_op: range, size: 4096, time: 3839 ms, np: 2
+LOG: prove: 4096 3839 ms
+LOG: verify: 4096 16 ms
+Profile PN Lookup: look size: 16384, query size: 4096
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 14 ms
+LOG: setup_rng: (QUICK) 160: 712311 ms
+LOG: -- setup pnlookup 838490 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 85 ms
+-------- fold prove --------
+LOG: -------- commit_m 59 ms
+LOG: -------- commit_a 54 ms
+LOG: -------- commit_qa 275 ms
+LOG: ---------- commit_b 54 ms
+LOG: ---------- compute q_b 31 ms
+LOG: ---------- commit_q_b and commit_p 98 ms
+LOG: ---------- compute b_gamma, t_gamma... 281 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 44 ms
+LOG: ---------- compute zk_qa0 DLOG 93 ms
+LOG: ------ fold prove cq 726 ms
+LOG: -- range proof step 1: build query table 14 ms
+LOG: -- range proof step 2: prove cq 4139 ms
+LOG: -- range proof step 3: build wit 13 ms
+LOG: -- range proof step 4: prove_qa_nizk 68 ms
+LOG: ------ range proof  4236 ms
+LOG: ------ compute q_o 18 ms
+LOG: ------ weighted kzg proof 190 ms
+REPORT_op: pn_lookup, size: 4096, time: 5257 ms, np: 2
+LOG: -- prove pnlookup 5257 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 16384, query_size: 4096
+LOG: -- generate random data 14 ms
+LOG: setup_rng: (QUICK) 160: 712553 ms
+LOG: -- set up keys 838703 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 85 ms
+-------- fold prove --------
+LOG: -------- commit_m 59 ms
+LOG: -------- commit_a 47 ms
+LOG: -------- commit_qa 237 ms
+LOG: ---------- commit_b 54 ms
+LOG: ---------- compute q_b 31 ms
+LOG: ---------- commit_q_b and commit_p 98 ms
+LOG: ---------- compute b_gamma, t_gamma... 291 us
+LOG: ---------- compute h(X) 13 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 44 ms
+LOG: ---------- compute zk_qa0 DLOG 87 ms
+LOG: ------ fold prove cq 674 ms
+LOG: -- range proof step 1: build query table 13 ms
+LOG: -- range proof step 2: prove cq 4860 ms
+LOG: -- range proof step 3: build wit 15 ms
+LOG: -- range proof step 4: prove_qa_nizk 86 ms
+LOG: ------ range proof  4976 ms
+LOG: ------ compute q_o 18 ms
+LOG: ------ weighted kzg proof 377 ms
+LOG: ---- pn_lookup proof 6133 ms
+LOG: ---- compute com_v 324 us
+LOG: ---- compute com_u 29 ms
+LOG: ---- compute q 79 ms
+LOG: ---- commit q 44 ms
+LOG: ---- commit u 89 ms
+LOG: ---- batch kzg 109 ms
+LOG: ---- dlog  46 ms
+REPORT_op: asset1, size: 4096, time: 6532 ms, np: 2
+LOG: -- prove work 6532 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 32768, query_size: 8192
+LOG: gen_kzg_key: 32768 3403 ms
+LOG: preprocess: 32768 131782 ms
+REPORT_op: cq, size: 8192, time: 842 ms, np: 2
+LOG: prove_cq: 32768 842 ms
+LOG: slow_verify_cq 32768 15 ms
+LOG: fast_verify_cq32768 12 ms
+LOG: gen_rand_eles: 8192 6 ms
+LOG: setup_rng: (QUICK) 160: 734024 ms
+LOG: setup range proof keys: 8192 734041 ms
+LOG: produce two commits: 8192 199 ms
+LOG: -- range proof step 1: build query table 27 ms
+LOG: -- range proof step 2: prove cq 6688 ms
+LOG: -- range proof step 3: build wit 28 ms
+LOG: -- range proof step 4: prove_qa_nizk 180 ms
+REPORT_op: range, size: 8192, time: 6925 ms, np: 2
+LOG: prove: 8192 6925 ms
+LOG: verify: 8192 16 ms
+Profile PN Lookup: look size: 32768, query size: 8192
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 30 ms
+LOG: setup_rng: (QUICK) 160: 733845 ms
+LOG: -- setup pnlookup 1002121 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 144 ms
+-------- fold prove --------
+LOG: -------- commit_m 101 ms
+LOG: -------- commit_a 95 ms
+LOG: -------- commit_qa 539 ms
+LOG: ---------- commit_b 95 ms
+LOG: ---------- compute q_b 59 ms
+LOG: ---------- commit_q_b and commit_p 180 ms
+LOG: ---------- compute b_gamma, t_gamma... 435 us
+LOG: ---------- compute h(X) 23 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 74 ms
+LOG: ---------- compute zk_qa0 DLOG 155 ms
+LOG: ------ fold prove cq 1326 ms
+LOG: -- range proof step 1: build query table 28 ms
+LOG: -- range proof step 2: prove cq 7501 ms
+LOG: -- range proof step 3: build wit 27 ms
+LOG: -- range proof step 4: prove_qa_nizk 140 ms
+LOG: ------ range proof  7699 ms
+LOG: ------ compute q_o 33 ms
+LOG: ------ weighted kzg proof 345 ms
+REPORT_op: pn_lookup, size: 8192, time: 9550 ms, np: 2
+LOG: -- prove pnlookup 9550 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 32768, query_size: 8192
+LOG: -- generate random data 30 ms
+LOG: setup_rng: (QUICK) 160: 734177 ms
+LOG: -- set up keys 1002529 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 142 ms
+-------- fold prove --------
+LOG: -------- commit_m 100 ms
+LOG: -------- commit_a 79 ms
+LOG: -------- commit_qa 432 ms
+LOG: ---------- commit_b 95 ms
+LOG: ---------- compute q_b 59 ms
+LOG: ---------- commit_q_b and commit_p 180 ms
+LOG: ---------- compute b_gamma, t_gamma... 439 us
+LOG: ---------- compute h(X) 23 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 74 ms
+LOG: ---------- compute zk_qa0 DLOG 143 ms
+LOG: ------ fold prove cq 1188 ms
+LOG: -- range proof step 1: build query table 28 ms
+LOG: -- range proof step 2: prove cq 8754 ms
+LOG: -- range proof step 3: build wit 28 ms
+LOG: -- range proof step 4: prove_qa_nizk 172 ms
+LOG: ------ range proof  8984 ms
+LOG: ------ compute q_o 33 ms
+LOG: ------ weighted kzg proof 700 ms
+LOG: ---- pn_lookup proof 11052 ms
+LOG: ---- compute com_v 408 us
+LOG: ---- compute com_u 49 ms
+LOG: ---- compute q 147 ms
+LOG: ---- commit q 82 ms
+LOG: ---- commit u 165 ms
+LOG: ---- batch kzg 200 ms
+LOG: ---- dlog  76 ms
+REPORT_op: asset1, size: 8192, time: 11774 ms, np: 2
+LOG: -- prove work 11774 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 65536, query_size: 16384
+LOG: gen_kzg_key: 65536 6465 ms
+LOG: preprocess: 65536 281377 ms
+REPORT_op: cq, size: 16384, time: 1567 ms, np: 2
+LOG: prove_cq: 65536 1567 ms
+LOG: slow_verify_cq 65536 15 ms
+LOG: fast_verify_cq65536 12 ms
+LOG: gen_rand_eles: 16384 12 ms
+LOG: setup_rng: (QUICK) 160: 777429 ms
+LOG: setup range proof keys: 16384 777445 ms
+LOG: produce two commits: 16384 379 ms
+LOG: -- range proof step 1: build query table 62 ms
+LOG: -- range proof step 2: prove cq 12577 ms
+LOG: -- range proof step 3: build wit 52 ms
+LOG: -- range proof step 4: prove_qa_nizk 348 ms
+REPORT_op: range, size: 16384, time: 13041 ms, np: 2
+LOG: prove: 16384 13041 ms
+LOG: verify: 16384 16 ms
+Profile PN Lookup: look size: 65536, query size: 16384
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 64 ms
+LOG: setup_rng: (QUICK) 160: 777419 ms
+LOG: -- setup pnlookup 1349439 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 284 ms
+-------- fold prove --------
+LOG: -------- commit_m 190 ms
+LOG: -------- commit_a 179 ms
+LOG: -------- commit_qa 1042 ms
+LOG: ---------- commit_b 179 ms
+LOG: ---------- compute q_b 115 ms
+LOG: ---------- commit_q_b and commit_p 330 ms
+LOG: ---------- compute b_gamma, t_gamma... 727 us
+LOG: ---------- compute h(X) 44 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 138 ms
+LOG: ---------- compute zk_qa0 DLOG 285 ms
+LOG: ------ fold prove cq 2507 ms
+LOG: -- range proof step 1: build query table 54 ms
+LOG: -- range proof step 2: prove cq 14173 ms
+LOG: -- range proof step 3: build wit 55 ms
+LOG: -- range proof step 4: prove_qa_nizk 275 ms
+LOG: ------ range proof  14559 ms
+LOG: ------ compute q_o 64 ms
+LOG: ------ weighted kzg proof 653 ms
+REPORT_op: pn_lookup, size: 16384, time: 18072 ms, np: 2
+LOG: -- prove pnlookup 18072 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 65536, query_size: 16384
+LOG: -- generate random data 62 ms
+LOG: setup_rng: (QUICK) 160: 777599 ms
+LOG: -- set up keys 1349519 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 277 ms
+-------- fold prove --------
+LOG: -------- commit_m 186 ms
+LOG: -------- commit_a 149 ms
+LOG: -------- commit_qa 843 ms
+LOG: ---------- commit_b 179 ms
+LOG: ---------- compute q_b 115 ms
+LOG: ---------- commit_q_b and commit_p 330 ms
+LOG: ---------- compute b_gamma, t_gamma... 775 us
+LOG: ---------- compute h(X) 43 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 138 ms
+LOG: ---------- compute zk_qa0 DLOG 263 ms
+LOG: ------ fold prove cq 2251 ms
+LOG: -- range proof step 1: build query table 59 ms
+LOG: -- range proof step 2: prove cq 16630 ms
+LOG: -- range proof step 3: build wit 53 ms
+LOG: -- range proof step 4: prove_qa_nizk 340 ms
+LOG: ------ range proof  17084 ms
+LOG: ------ compute q_o 65 ms
+LOG: ------ weighted kzg proof 1303 ms
+LOG: ---- pn_lookup proof 20986 ms
+LOG: ---- compute com_v 560 us
+LOG: ---- compute com_u 95 ms
+LOG: ---- compute q 285 ms
+LOG: ---- commit q 151 ms
+LOG: ---- commit u 303 ms
+LOG: ---- batch kzg 369 ms
+LOG: ---- dlog  141 ms
+REPORT_op: asset1, size: 16384, time: 22335 ms, np: 2
+LOG: -- prove work 22335 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456
+profiling ... with threads: 2, lookup_size: 131072, query_size: 32768
+LOG: gen_kzg_key: 131072 12217 ms
+LOG: preprocess: 131072 596144 ms
+REPORT_op: cq, size: 32768, time: 2868 ms, np: 2
+LOG: prove_cq: 131072 2868 ms
+LOG: slow_verify_cq 131072 15 ms
+LOG: fast_verify_cq131072 12 ms
+LOG: gen_rand_eles: 32768 23 ms
+LOG: setup_rng: (QUICK) 160: 864422 ms
+LOG: setup range proof keys: 32768 864442 ms
+LOG: produce two commits: 32768 609 ms
+LOG: -- range proof step 1: build query table 138 ms
+LOG: -- range proof step 2: prove cq 23563 ms
+LOG: -- range proof step 3: build wit 110 ms
+LOG: -- range proof step 4: prove_qa_nizk 617 ms
+REPORT_op: range, size: 32768, time: 24431 ms, np: 2
+LOG: prove: 32768 24431 ms
+LOG: verify: 32768 16 ms
+Profile PN Lookup: look size: 131072, query size: 32768
+---- Profile PN-Lookup ----
+LOG: -- gen random query tables 131 ms
+LOG: setup_rng: (QUICK) 160: 864495 ms
+LOG: -- setup pnlookup 2073907 ms
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 508 ms
+-------- fold prove --------
+LOG: -------- commit_m 356 ms
+LOG: -------- commit_a 336 ms
+LOG: -------- commit_qa 2116 ms
+LOG: ---------- commit_b 336 ms
+LOG: ---------- compute q_b 235 ms
+LOG: ---------- commit_q_b and commit_p 551 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 87 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 254 ms
+LOG: ---------- compute zk_qa0 DLOG 522 ms
+LOG: ------ fold prove cq 4799 ms
+LOG: -- range proof step 1: build query table 107 ms
+LOG: -- range proof step 2: prove cq 26693 ms
+LOG: -- range proof step 3: build wit 112 ms
+LOG: -- range proof step 4: prove_qa_nizk 353 ms
+LOG: ------ range proof  27267 ms
+LOG: ------ compute q_o 127 ms
+LOG: ------ weighted kzg proof 1188 ms
+REPORT_op: pn_lookup, size: 32768, time: 33896 ms, np: 2
+LOG: -- prove pnlookup 33896 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verify pnlookup 32 ms
+===== Profile Asset Protocol: bits: 160, unit_bits: 20, lookup_size: 131072, query_size: 32768
+LOG: -- generate random data 130 ms
+LOG: setup_rng: (QUICK) 160: 864651 ms
+LOG: -- set up keys 2073982 ms
+=== asset1 prove ===
+------ pn_lookup prove -----
+LOG: ------ compute com_o, com_u 491 ms
+-------- fold prove --------
+LOG: -------- commit_m 350 ms
+LOG: -------- commit_a 279 ms
+LOG: -------- commit_qa 1707 ms
+LOG: ---------- commit_b 338 ms
+LOG: ---------- compute q_b 233 ms
+LOG: ---------- commit_q_b and commit_p 552 ms
+LOG: ---------- compute b_gamma, t_gamma... 1 ms
+LOG: ---------- compute h(X) 87 ms
+LOG: ---------- compute prf_gamma: [h(s)]_1 254 ms
+LOG: ---------- compute zk_qa0 DLOG 482 ms
+LOG: ------ fold prove cq 4288 ms
+LOG: -- range proof step 1: build query table 115 ms
+LOG: -- range proof step 2: prove cq 30670 ms
+LOG: -- range proof step 3: build wit 114 ms
+LOG: -- range proof step 4: prove_qa_nizk 586 ms
+LOG: ------ range proof  31488 ms
+LOG: ------ compute q_o 132 ms
+LOG: ------ weighted kzg proof 2394 ms
+LOG: ---- pn_lookup proof 38806 ms
+LOG: ---- compute com_v 1 ms
+LOG: ---- compute com_u 169 ms
+LOG: ---- compute q 567 ms
+LOG: ---- commit q 274 ms
+LOG: ---- commit u 554 ms
+LOG: ---- batch kzg 682 ms
+LOG: ---- dlog  259 ms
+REPORT_op: asset1, size: 32768, time: 41315 ms, np: 2
+LOG: -- prove work 41316 ms
+b1: true, b2: true, b3: true, b4: true, b5: true
+LOG: -- verifier work 46 ms
+REPORT_op: proof_size, size: 3456

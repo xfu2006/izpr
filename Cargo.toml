@@ -1,0 +1,39 @@
+[package]
+name = "izpr"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+incremental = true
+panic = 'abort'
+
+[profile.test]
+opt-level = 3
+
+[dependencies]
+rand={version="0.8.5"}
+ark-ff= {version="0.3.0", features=["asm"], path="dependency/zkregex/acc/dependency/algebra/ff"}
+ark-std= {version="0.3.0", features=["parallel"]}
+ark-bls12-381= {version="0.3.0", path="dependency/zkregex/acc/dependency/curves/bls12_381"}
+ark-bn254= {version="0.3.0", path="dependency/zkregex/acc/dependency/curves/bn254"}
+ark-ec= {version="0.3.0", path="dependency/zkregex/acc/dependency/algebra/ec", features=["parallel"]}
+ark-poly= {version="0.3.0", path="dependency/zkregex/acc/dependency/algebra/poly", features=["parallel"]}
+#ark-sipp= {version="0.3.0", path="dependency/zkregex/acc/dependency/ripp/sipp", default-features=false}
+#ark-inner-products= {version="0.3.0", path="dependency/zkregex/acc/dependency/ripp/inner_products", default-features=false}
+#ark-dh-commitments= {version="0.3.0", path="dependency/zkregex/acc/dependency/ripp/dh_commitments", default-features=false}
+#ark-ip-proofs= {version="0.3.0", path="dependency/zkregex/acc/dependency/ripp/ip_proofs", default-features=false}
+ark-poly-commit= {version="0.3.0"}
+ark-serialize= {version="0.3.0", path="dependency/zkregex/acc/dependency/algebra/serialize"}
+#mpi= {version = "0.7.0"}
+#, path = "dependency/zkregex/dependency/rsmpi"}
+acc={version="0.1.0", path="dependency/zkregex/acc", feature=["parallel"]}
+rayon={version="1"}
+itertools ={version="0.8"}
+
+[patch.crates-io]
+ark-std = {git = "https://github.com/arkworks-rs/std",rev="05b7a19a99551bdd737eb2ffb1c9eac7be0dd11f"}
+
